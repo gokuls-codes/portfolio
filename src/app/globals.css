@@ -104,3 +104,18 @@ html {
     opacity: 1;
   }
 }
+
+.experience-left {
+  scale: 0.6;
+  opacity: 0;
+  animation: slide-left linear forwards;
+  animation-timeline: view();
+  animation-range: 100px 500px;
+}
+
+@keyframes slide-left {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

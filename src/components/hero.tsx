@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "./ui/button";
-import { Send } from "lucide-react";
+import { MapPin, Send } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -21,10 +20,13 @@ const HeroSection = () => {
         <p className=" text-2xl md:text-4xl font-thin">Hi, I&apos;m</p>
         <h1 className=" text-4xl md:text-6xl font-bold">Gokul Kannan</h1>
         <h2 className=" text-2xl  md:text-4xl ">Software Engineer</h2>
-        <Button className=" w-fit gap-2 mt-4" size="lg">
-          <span className=" text-sm md:text-lg">Contact</span>
-          <Send size={18} />
-        </Button>
+        <p className=" text-lg  md:text-2xl  ">
+          Transforming ideas into products
+        </p>
+        <div className=" text-lg  md:text-2xl flex gap-2 items-center">
+          <MapPin />
+          <span>Bengaluru, India</span>
+        </div>
       </div>
     </section>
   );
