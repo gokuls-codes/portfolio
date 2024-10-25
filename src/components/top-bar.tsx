@@ -6,11 +6,17 @@ import { Button } from "./ui/button";
 const TopBar = () => {
   return (
     <header className=" flex items-center justify-around h-24 sticky top-0">
-      <Link href="/" className=" z-20">
+      <Link href="#hero" className=" z-20">
         <h3 className=" text-foreground text-2xl font-bold">Gokul Kannan</h3>
       </Link>
-      <nav className=" flex gap-4 z-20">
-        <Button variant="link" asChild className=" gap-2">
+      <nav className=" flex gap-4 z-20 items-center">
+        <Button variant="link" asChild>
+          <Link href="#skills">Skills</Link>
+        </Button>
+        <Button variant="link" asChild>
+          <Link href="#experience">Experience</Link>
+        </Button>
+        <Button variant="ghost" asChild className=" gap-2">
           <Link href={"/resume.pdf"} target="_blank">
             <span>Resume</span>
             <ArrowUpRight size={12} />

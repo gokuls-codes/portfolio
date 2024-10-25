@@ -5,7 +5,10 @@ import { Send } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className=" h-[calc(100vh-6rem)] flex flex-col md:flex-row md:items-center md:pb-[30vh] md:justify-center pb-8 gap-6">
+    <section
+      className=" h-[calc(100vh-6rem)] flex flex-col md:flex-row md:items-center md:pb-[30vh] md:justify-center pb-8 gap-6"
+      id="hero"
+    >
       <Image
         src={"/image.jpg"}
         width={600}
