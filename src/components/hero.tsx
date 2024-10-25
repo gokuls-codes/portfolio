@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { MapPin, Send } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 const HeroSection = () => {
   return (
