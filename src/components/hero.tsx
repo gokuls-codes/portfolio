@@ -14,7 +14,7 @@ const HeroSection = () => {
         className=" h-1/2  object-cover  aspect-[5/8]"
       />
       <div className=" flex flex-col gap-2">
-        <p className=" text-4xl font-thin">Hi, I'm</p>
+        <p className=" text-4xl font-thin">Hi, I&apos;m</p>
         <h1 className=" text-6xl font-bold">Gokul Kannan</h1>
         <h2 className=" text-4xl ">Software Developer</h2>
         <Button className=" w-fit gap-2 mt-4" size={"lg"}>
