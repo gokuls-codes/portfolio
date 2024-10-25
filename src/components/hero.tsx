@@ -8,10 +8,11 @@ const HeroSection = () => {
     <div className=" h-[calc(100vh-5rem)] flex flex-col lg:flex-row items-center lg:pb-[30vh] justify-center gap-6">
       <Image
         src={"/image.jpg"}
-        width={400}
-        height={800}
+        width={600}
+        height={900}
         alt="hero-image"
-        className=" h-2/3  object-contain  aspect-[2/3]"
+        className=" h-2/3  object-contain w-auto"
+        priority
       />
       <div className=" flex flex-col gap-2">
         <p className=" text-4xl font-thin">Hi, I&apos;m</p>
