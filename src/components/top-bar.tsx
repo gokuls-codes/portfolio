@@ -1,17 +1,23 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
 
 const TopBar = () => {
   return (
-    <header className=" flex items-center justify-around border-b border-border h-20">
-      <h3 className=" text-foreground text-2xl font-bold">Gokul Kannan</h3>
-      <nav className=" flex gap-4">
-        <Link href={"/resume.pdf"} target="_blank" className=" flex gap-1">
-          <span>Resume</span>
-          <ArrowUpRight size={12} />
-        </Link>
+    <header className=" flex items-center justify-around h-24 sticky top-0">
+      <Link href="/" className=" z-20">
+        <h3 className=" text-foreground text-2xl font-bold">Gokul Kannan</h3>
+      </Link>
+      <nav className=" flex gap-4 z-20">
+        <Button variant="link" asChild className=" gap-2">
+          <Link href={"/resume.pdf"} target="_blank">
+            <span>Resume</span>
+            <ArrowUpRight size={12} />
+          </Link>
+        </Button>
       </nav>
+      <div className=" h-full w-full absolute z-10 top-0 opacity-100 backdrop bg-foreground/5 backdrop-blur-2xl pointer-events-none"></div>
     </header>
   );
 };

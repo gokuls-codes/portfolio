@@ -6,7 +6,7 @@ const mulish = Mulish({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gokul Kannan",
-  description: "Personal website of Gokul Kannan, a software developer.",
+  description: "Personal website of Gokul Kannan, a software engineer.",
 };
 
 export default function RootLayout({
