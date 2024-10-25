@@ -89,3 +89,18 @@ html {
   );
   inset: -1rem 0;
 }
+
+.skills > * {
+  scale: 0.6;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 20vh 50vh;
+}
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

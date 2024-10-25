@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const SkillsSection = () => {
   return (
-    <section className=" p-6 space-y-8 pt-24 -mt-16" id="skills">
+    <section className=" p-6 space-y-8 pt-24 -mt-16 " id="skills">
       <h2 className="  text-4xl font-semibold text-center">Skills</h2>
-      <div className=" grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-fit mx-auto">
+      <div className=" grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-fit mx-auto skills">
         {SKILLS.map((skill, index) => (
           <Link
             href={skill.url}
