@@ -11,7 +11,7 @@ const HeroSection = () => {
         width={400}
         height={800}
         alt="hero-image"
-        className=" h-1/2  object-cover  aspect-[5/8]"
+        className=" h-2/3  object-contain  aspect-[2/3]"
       />
       <div className=" flex flex-col gap-2">
         <p className=" text-4xl font-thin">Hi, I&apos;m</p>
