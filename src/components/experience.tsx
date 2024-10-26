@@ -8,9 +8,9 @@ const ExperienceSection = () => {
   return (
     <section className=" p-6 space-y-8 h-screen pt-24 -mt-16" id="experience">
       <h2 className="  text-4xl font-semibold text-center">Experience</h2>
-      <div className=" flex gap-4 justify-center experience-left">
-        <div className=" text-right space-y-2">
-          <div className=" p-2 rounded-sm w-fit ml-auto">
+      <div className=" flex flex-col md:flex-row gap-4 justify-center ">
+        <div className=" text-center  md:text-right space-y-2 relative ">
+          <div className=" p-2 rounded-sm w-fit mx-auto md:ml-auto">
             <Image
               src={BlueStoneLogo}
               width={200}
@@ -21,9 +21,12 @@ const ExperienceSection = () => {
           <h4 className=" text-2xl font-semibold">Software Engineer</h4>
           <p>BlueStone Jewellery and Lifestyle</p>
           <p className=" text-lg text-foreground/40 ">June 2023 - Present</p>
+          <div className=" absolute -inset-2 z-20 bg-black experience-left"></div>
         </div>
-        <Separator orientation="vertical" className=" h-auto" />
-        <div className=" max-w-md lg:max-w-lg my-auto experience-right">
+        <Separator orientation="vertical" className=" h-auto hidden md:block" />
+        <Separator className=" md:hidden " />
+
+        <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative">
           <ul className="list-disc pl-4 md:text-lg">
             <li>
               Working on migrating the Billing software used in shops to React
@@ -38,6 +41,8 @@ const ExperienceSection = () => {
               stores by using RFID for scanning products.
             </li>
           </ul>
+
+          <div className=" absolute -inset-2 z-20 bg-black experience-right"></div>
         </div>
       </div>
     </section>

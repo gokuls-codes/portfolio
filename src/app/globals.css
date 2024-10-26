@@ -106,16 +106,47 @@ html {
 }
 
 .experience-left {
-  scale: 0.6;
-  opacity: 0;
-  animation: slide-left linear forwards;
+  scale: 1 1;
+  animation: slide-from-top linear forwards;
   animation-timeline: view();
-  animation-range: 100px 500px;
+  animation-range: 200px 500px;
+  transform-origin: top;
 }
 
-@keyframes slide-left {
+.experience-right {
+  scale: 1 1;
+  animation: slide-from-top linear forwards;
+  animation-timeline: view();
+  animation-range: 200px 500px;
+  transform-origin: bottom;
+}
+
+@keyframes slide-from-top {
   to {
-    scale: 1;
-    opacity: 1;
+    scale: 1 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .experience-left {
+    scale: 1 1;
+    animation: slide-from-side linear forwards;
+    animation-timeline: view();
+    animation-range: 200px 500px;
+    transform-origin: left;
+  }
+
+  .experience-right {
+    scale: 1 1;
+    animation: slide-from-side linear forwards;
+    animation-timeline: view();
+    animation-range: 200px 500px;
+    transform-origin: right;
+  }
+}
+
+@keyframes slide-from-side {
+  to {
+    scale: 0 1;
   }
 }
