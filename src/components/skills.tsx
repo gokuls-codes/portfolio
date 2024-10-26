@@ -13,12 +13,12 @@ const SkillsSection = () => {
             className=" p-4 border border-border rounded-md bg-gradient-to-br from-background to-foreground/5 hover:bg-foreground/5 transition-all duration-100"
             key={"skill" + id}
           >
-            <p className=" text-2xl text-center">{skill}</p>
+            <p className=" text-base md:text-lg text-center">{skill}</p>
           </div>
         ))}
       </div>
       <div className=" space-y-4 skills">
-        <h4 className="  font-light text-2xl text-center ">Languages</h4>
+        <h4 className="  font-light text-lg text-center ">Languages</h4>
         <div className=" flex items-center justify-center gap-2 flex-wrap mx-auto">
           {LANGUAGES.map((skill, index) => (
             <Link
@@ -33,7 +33,7 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        <h4 className="  font-light text-2xl text-center">Frameworks</h4>
+        <h4 className="  font-light text-lg text-center">Frameworks</h4>
         <div className=" flex items-center justify-center gap-2 flex-wrap mx-auto ">
           {FRAMEWORKS.map((skill, index) => (
             <Link
@@ -48,7 +48,7 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        <h4 className="  font-light text-2xl text-center">Tools</h4>
+        <h4 className="  font-light text-lg text-center">Tools</h4>
         <div className=" flex items-center justify-center gap-2 flex-wrap mx-auto ">
           {OTHERS.map((skill, index) => (
             <Link

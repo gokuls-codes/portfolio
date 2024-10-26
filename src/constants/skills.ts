@@ -21,6 +21,7 @@ import VscodeIcon from "@/resources/icons/vscode.svg";
 import AwsIcon from "@/resources/icons/aws.svg";
 import LinuxIcon from "@/resources/icons/linux.svg";
 import GitIcon from "@/resources/icons/git.svg";
+import HtmxIcon from "@/resources/icons/htmx.svg";
 // import ViteIcon from "@/resources/icons/vite.svg";
 // import ReduxIcon from "@/resources/icons/redux.svg";
 import ElectronIcon from "@/resources/icons/electron.svg";
@@ -124,6 +125,11 @@ const FRAMEWORKS = [
     name: "Node JS",
     icon: NodeIcon,
     url: "https://nodejs.org/",
+  },
+  {
+    name: "HTMX",
+    icon: HtmxIcon,
+    url: "https://htmx.org/",
   },
 ];
 

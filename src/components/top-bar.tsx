@@ -14,7 +14,7 @@ const TopBar = () => {
   return (
     <header className=" flex items-center justify-between px-4 md:justify-around h-24 sticky top-0 z-10">
       <Link href="/" className=" z-30">
-        <h3 className=" text-foreground text-2xl font-bold">Gokul Kannan</h3>
+        <h3 className=" text-foreground text-2xl font-bold">GK</h3>
       </Link>
       <nav className=" gap-4 z-30 items-center hidden md:flex">
         <Button variant="link" asChild>

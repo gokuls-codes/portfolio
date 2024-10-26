@@ -95,7 +95,7 @@ html {
   opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
-  animation-range: 20vh 50vh;
+  animation-range: 20vh 30vh;
 }
 
 @keyframes fade-in {
@@ -105,25 +105,20 @@ html {
   }
 }
 
-.experience-left {
-  scale: 1 1;
-  animation: slide-from-top linear forwards;
-  animation-timeline: view();
-  animation-range: 200px 500px;
-  transform-origin: top;
-}
+@media only screen and (max-width: 768px) {
+  .experience > * {
+    scale: 0.6;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 20vh 30vh;
+  }
 
-.experience-right {
-  scale: 1 1;
-  animation: slide-from-top linear forwards;
-  animation-timeline: view();
-  animation-range: 200px 500px;
-  transform-origin: bottom;
-}
-
-@keyframes slide-from-top {
-  to {
-    scale: 1 0;
+  @keyframes fade-in {
+    to {
+      scale: 1;
+      opacity: 1;
+    }
   }
 }
 
@@ -132,7 +127,7 @@ html {
     scale: 1 1;
     animation: slide-from-side linear forwards;
     animation-timeline: view();
-    animation-range: 200px 500px;
+    animation-range: 20vh 30vh;
     transform-origin: left;
   }
 
@@ -140,7 +135,7 @@ html {
     scale: 1 1;
     animation: slide-from-side linear forwards;
     animation-timeline: view();
-    animation-range: 200px 500px;
+    animation-range: 20vh 30vh;
     transform-origin: right;
   }
 }
