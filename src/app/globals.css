@@ -145,3 +145,17 @@ html {
     scale: 0 1;
   }
 }
+
+.exp-separator {
+  scale: 1 0;
+  animation: slide-in linear forwards;
+  animation-timeline: view();
+  animation-range: 30vh 40vh;
+  transform-origin: top;
+}
+
+@keyframes slide-in {
+  to {
+    scale: 1 1;
+  }
+}

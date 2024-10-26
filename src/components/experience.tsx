@@ -8,10 +8,7 @@ import { Separator } from "./ui/separator";
 
 const ExperienceSection = () => {
   return (
-    <section
-      className=" p-6 space-y-8 min-h-screen pt-24 -mt-16 "
-      id="experience"
-    >
+    <section className=" p-6 space-y-8 pt-24 -mt-16 " id="experience">
       <h2 className="  text-4xl font-semibold text-center">Experience</h2>
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
         <div className=" text-center md:w-[250px]  md:text-right space-y-2 relative experience ">
@@ -29,7 +26,10 @@ const ExperienceSection = () => {
           <p className=" text-lg text-foreground/40 ">June 2023 - Present</p>
           <div className=" absolute -inset-2 z-20 bg-background experience-left hidden md:block "></div>
         </div>
-        <Separator orientation="vertical" className=" h-auto hidden md:block" />
+        <Separator
+          orientation="vertical"
+          className=" h-auto hidden md:block exp-separator"
+        />
         <Separator className=" md:hidden " />
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
@@ -69,7 +69,10 @@ const ExperienceSection = () => {
           <p className=" text-lg text-foreground/40 ">June 2022 - July 2022</p>
           <div className=" absolute -inset-2 z-20 bg-background experience-left hidden md:block "></div>
         </div>
-        <Separator orientation="vertical" className=" h-auto hidden md:block" />
+        <Separator
+          orientation="vertical"
+          className=" h-auto hidden md:block exp-separator"
+        />
         <Separator className=" md:hidden " />
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
