@@ -34,7 +34,9 @@ const SKILLS = [
   "Problem Solving",
   "Data Structures",
   "Algorithms",
-  "Database Design",
+  "System Design",
+  "Machine Learning",
+  "UI/UX Design",
 ];
 
 const LANGUAGES = [

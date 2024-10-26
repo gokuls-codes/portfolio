@@ -8,7 +8,10 @@ import { Separator } from "./ui/separator";
 
 const ExperienceSection = () => {
   return (
-    <section className=" p-6 space-y-8 h-screen pt-24 -mt-16" id="experience">
+    <section
+      className=" p-6 space-y-8 min-h-screen pt-24 -mt-16 "
+      id="experience"
+    >
       <h2 className="  text-4xl font-semibold text-center">Experience</h2>
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
         <div className=" text-center md:w-[250px]  md:text-right space-y-2 relative experience ">
@@ -30,7 +33,7 @@ const ExperienceSection = () => {
         <Separator className=" md:hidden " />
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
-          <ul className="list-disc pl-4 md:text-lg">
+          <ul className="list-disc pl-4 text-sm md:text-base">
             <li>
               Rewriting the billing software used in stores in React which will
               improve the user experience significantly, thereby increase the
@@ -70,7 +73,7 @@ const ExperienceSection = () => {
         <Separator className=" md:hidden " />
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
-          <ul className="list-disc pl-4 md:text-lg">
+          <ul className="list-disc pl-4 text-sm md:text-base">
             <li>
               Created a server-client in python using socket programming to
               transfer ML models from server to client which makes possible for
