@@ -5,7 +5,7 @@ import { MapPin } from "lucide-react";
 const HeroSection = () => {
   return (
     <section
-      className=" relative z-10 h-[calc(100vh-6rem)] bg-background/20  flex flex-col md:flex-row md:items-center md:pb-[30vh] md:justify-center pb-8 gap-6"
+      className=" z-10 h-[calc(100vh-6rem)] bg-background/20  flex flex-col md:flex-row md:items-center md:pb-[30vh] md:justify-center pb-8 gap-6"
       id="hero"
     >
       <Image
@@ -27,12 +27,6 @@ const HeroSection = () => {
           <MapPin />
           <span>Bengaluru, India</span>
         </div>
-      </div>
-
-      <div className=" absolute inset-0 -z-10">
-        <p className=" text-9xl font-black -rotate-[20deg] scale-125 absolute bottom-10 text-foreground/40 blur-sm right-10 ">
-          {"</>"}
-        </p>
       </div>
     </section>
   );
