@@ -17,7 +17,7 @@ const Footer = () => {
         <div className=" space-y-2 flex flex-col items-end">
           <h3 className=" text-4xl xl:text-6xl">Have an idea?</h3>
           <p className=" text-2xl xl:text-4xl font-light text-right  text-foreground/70">
-            Let's build it together!
+            Let&apos;s build it together!
           </p>
           <div className=" flex items-center gap-1">
             <p className=" text-right">Drop a mail to</p>
