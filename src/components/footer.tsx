@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className=" mt-12 md:mt-0">
           <h3 className=" text-center mb-6 text-xl">Links</h3>
-          <ul className=" flex flex-row flex-wrap items-center justify-center md:flex-col gap-2">
+          <ul className=" flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:flex-col gap-2">
             <li>
               <Button asChild variant={"link"}>
                 <Link target="_blank" href={"https://github.com/gokuls-codes"}>
