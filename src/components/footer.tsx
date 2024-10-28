@@ -13,21 +13,21 @@ import CopyMailButton from "./copy-mail-button";
 const Footer = () => {
   return (
     <footer className=" pt-20 pb-10 flex flex-col justify-around items-center gap-20  bg-foreground/5 px-8">
-      <div className=" flex justify-around w-full">
+      <div className=" flex flex-col md:flex-row items-center justify-around w-full">
         <div className=" space-y-2 flex flex-col items-end">
           <h3 className=" text-4xl xl:text-6xl">Have an idea?</h3>
           <p className=" text-2xl xl:text-4xl font-light text-right  text-foreground/70">
             Let&apos;s build it together!
           </p>
-          <div className=" flex items-center gap-1">
+          <div className=" flex flex-col items-center gap-1">
             <p className=" text-right">Drop a mail to</p>
             <CopyMailButton />
           </div>
         </div>
 
-        <div>
+        <div className=" mt-12 md:mt-0">
           <h3 className=" text-center mb-6 text-xl">Links</h3>
-          <ul className=" flex  flex-col gap-2">
+          <ul className=" flex flex-row flex-wrap items-center justify-center md:flex-col gap-2">
             <li>
               <Button asChild variant={"link"}>
                 <Link target="_blank" href={"https://github.com/gokuls-codes"}>
