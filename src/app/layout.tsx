@@ -10,6 +10,21 @@ const mulish = Mulish({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Gokul Kannan",
   description: "Personal website of Gokul Kannan, a software engineer.",
+  robots: "follow, index",
+  twitter: {
+    card: "summary_large_image",
+    title: "Gokul Kannan",
+    description: "Personal website of Gokul Kannan, a software engineer.",
+    creator: "@meIsGokul",
+  },
+  openGraph: {
+    title: "Gokul Kannan",
+    description: "Personal website of Gokul Kannan, a software engineer.",
+    url: "https://gokulkannanr.in",
+    siteName: "Gokul Kannan",
+    locale: "en-US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
