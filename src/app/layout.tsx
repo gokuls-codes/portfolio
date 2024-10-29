@@ -9,27 +9,30 @@ const mulish = Mulish({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gokul Kannan",
-  description: "Personal website of Gokul Kannan, a software engineer.",
+  description:
+    "Portfolio website of Gokul Kannan. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
   robots: "follow, index",
   twitter: {
     card: "summary_large_image",
     title: "Gokul's Portfolio site",
-    description: "Personal website of Gokul Kannan, a software engineer.",
+    description:
+      "Portfolio website of Gokul Kannan. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
     creator: "@meIsGokul",
-    images: ["https://gokulkannanr.in/image.jpg"],
+    images: ["https://gokulkannanr.in/preview.png"],
   },
   openGraph: {
-    title: "Gokul Kannan",
-    description: "Personal website of Gokul Kannan, a software engineer.",
+    title: "Gokul Kannan, Software Engineer",
+    description:
+      "Portfolio website of Gokul Kannan. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
     url: "https://gokulkannanr.in",
     siteName: "Gokul's Portfolio site",
     locale: "en-US",
     type: "website",
     images: [
       {
-        url: "https://gokulkannanr.in/image.jpg",
+        url: "https://gokulkannanr.in/preview.png",
         width: 1200,
-        height: 750,
+        height: 630,
         alt: "Gokul Kannan",
       },
     ],
