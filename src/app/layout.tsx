@@ -13,17 +13,26 @@ export const metadata: Metadata = {
   robots: "follow, index",
   twitter: {
     card: "summary_large_image",
-    title: "Gokul Kannan",
+    title: "Gokul's Portfolio site",
     description: "Personal website of Gokul Kannan, a software engineer.",
     creator: "@meIsGokul",
+    images: ["https://gokulkannanr.in/image.jpg"],
   },
   openGraph: {
     title: "Gokul Kannan",
     description: "Personal website of Gokul Kannan, a software engineer.",
     url: "https://gokulkannanr.in",
-    siteName: "Gokul Kannan",
+    siteName: "Gokul's Portfolio site",
     locale: "en-US",
     type: "website",
+    images: [
+      {
+        url: "https://gokulkannanr.in/image.jpg",
+        width: 1200,
+        height: 750,
+        alt: "Gokul Kannan",
+      },
+    ],
   },
 };
 
