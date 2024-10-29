@@ -13,7 +13,7 @@ import CopyMailButton from "./copy-mail-button";
 const Footer = () => {
   return (
     <footer className=" pt-20 pb-10 flex flex-col justify-around items-center gap-20  bg-foreground/5 px-8">
-      <div className=" flex flex-col md:flex-row items-center justify-around w-full">
+      <div className=" flex flex-col md:flex-row items-center justify-around w-full  container mx-auto">
         <div className=" space-y-2 flex flex-col items-end">
           <h3 className=" text-4xl xl:text-6xl">Have an idea?</h3>
           <p className=" text-2xl xl:text-4xl font-light text-right  text-foreground/70">
@@ -39,7 +39,7 @@ const Footer = () => {
             <li>
               <Button asChild variant={"link"}>
                 <Link target="_blank" href={"mailto:gokulkannanr9@gmail.com"}>
-                  <Mail size={16} />
+                  <Mail size={16} className=" text-white" />
                   <span>Mail</span>
                 </Link>
               </Button>
@@ -88,7 +88,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className=" flex items-center justify-center gap-2">
+      <div className="  container mx-auto flex items-center justify-center gap-2">
         <Copyright />
         <span>Gokul Kannan</span>
       </div>
