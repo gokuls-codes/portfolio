@@ -23,7 +23,7 @@ const ExperienceSection = () => {
               alt="Bluestone logo"
             />
           </div>
-          <h4 className=" text-2xl font-semibold">Software Engineer</h4>
+          <h3 className=" text-2xl font-semibold">Software Engineer</h3>
           <p>BlueStone Jewellery and Lifestyle</p>
           <p>Bengaluru, India</p>
           <p className=" text-lg text-foreground/40 ">June 2023 - Present</p>
@@ -66,7 +66,7 @@ const ExperienceSection = () => {
               alt="Bluestone logo"
             />
           </div>
-          <h4 className=" text-2xl font-semibold">Summer Intern</h4>
+          <h3 className=" text-2xl font-semibold">Summer Intern</h3>
           <p>Samsung R&D Institute</p>
           <p>Noida, India</p>
           <p className=" text-lg text-foreground/40 ">June 2022 - July 2022</p>
@@ -105,7 +105,7 @@ const ExperienceSection = () => {
               alt="IIT Hyderabad logo"
             />
           </div>
-          <h4 className=" text-2xl font-semibold">B.Tech (CSE)</h4>
+          <h3 className=" text-2xl font-semibold">B.Tech (CSE)</h3>
           <p>Indian Institute of Technology</p>
           <p>Hyderabad, India</p>
           <p className=" text-lg text-foreground/40 ">July 2019 - May 2023</p>

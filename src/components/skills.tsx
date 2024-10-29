@@ -18,7 +18,7 @@ const SkillsSection = () => {
         ))}
       </div>
       <div className=" space-y-4 skills">
-        <h4 className="  font-light text-lg text-center ">Languages</h4>
+        <h3 className="  font-light text-lg text-center ">Languages</h3>
         <div className=" flex items-center justify-center gap-2 flex-wrap mx-auto">
           {LANGUAGES.map((skill, index) => (
             <Link
@@ -33,7 +33,7 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        <h4 className="  font-light text-lg text-center">Frameworks</h4>
+        <h3 className="  font-light text-lg text-center">Frameworks</h3>
         <div className=" flex items-center justify-center gap-2 flex-wrap mx-auto ">
           {FRAMEWORKS.map((skill, index) => (
             <Link
@@ -48,7 +48,7 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        <h4 className="  font-light text-lg text-center">Tools</h4>
+        <h3 className="  font-light text-lg text-center">Tools</h3>
         <div className=" flex items-center justify-center gap-2 flex-wrap mx-auto ">
           {OTHERS.map((skill, index) => (
             <Link

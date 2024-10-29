@@ -34,14 +34,14 @@ const TopBar = () => {
             </Link>
           </Button>
           <Button variant="ghost" asChild className=" gap-2 ml-auto">
-            <Link
+            <a
               className=" text-foreground"
               href={"/resume.pdf"}
               target="_blank"
             >
               <span>Resume</span>
               <ArrowUpRight size={12} />
-            </Link>
+            </a>
           </Button>
         </nav>
         <div className="md:hidden z-30">
@@ -83,14 +83,14 @@ const TopBar = () => {
                   </Link>
                 </Button>
                 <Button variant="ghost" asChild className=" gap-2 mt-auto">
-                  <Link
+                  <a
                     className=" text-foreground"
                     href={"/resume.pdf"}
                     target="_blank"
                   >
                     <span>Resume</span>
                     <ArrowUpRight size={12} />
-                  </Link>
+                  </a>
                 </Button>
               </nav>
             </SheetContent>
