@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gokul Kannan | Software Engineer",
     description:
-      "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
+      "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. Feel free to reach out via my social links.",
     creator: "@meIsGokul",
     images: ["https://gokulkannanr.in/preview.png"],
   },
