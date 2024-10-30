@@ -11,21 +11,29 @@ export const metadata: Metadata = {
   title: "Gokul Kannan",
   description:
     "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
+  keywords: [
+    "Gokul Kannan",
+    "Gokul",
+    "Software Engineer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer",
+  ],
   robots: "follow, index",
   twitter: {
     card: "summary_large_image",
-    title: "Gokul's Portfolio site",
+    title: "Gokul Kannan | Software Engineer",
     description:
       "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
     creator: "@meIsGokul",
     images: ["https://gokulkannanr.in/preview.png"],
   },
   openGraph: {
-    title: "Gokul Kannan, Software Engineer",
+    title: "Gokul Kannan | Software Engineer",
     description:
       "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
     url: "https://gokulkannanr.in",
-    siteName: "Gokul's Portfolio site",
+    siteName: "Gokul's personal website",
     locale: "en-US",
     type: "website",
     images: [
