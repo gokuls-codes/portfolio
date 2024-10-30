@@ -10,20 +10,20 @@ const mulish = Mulish({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Gokul Kannan",
   description:
-    "Portfolio website of Gokul Kannan. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
+    "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
   robots: "follow, index",
   twitter: {
     card: "summary_large_image",
     title: "Gokul's Portfolio site",
     description:
-      "Portfolio website of Gokul Kannan. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
+      "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
     creator: "@meIsGokul",
     images: ["https://gokulkannanr.in/preview.png"],
   },
   openGraph: {
     title: "Gokul Kannan, Software Engineer",
     description:
-      "Portfolio website of Gokul Kannan. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
+      "Hi, I am Gokul Kannan, a software engineer based in Bengaluru, India. This is my portfolio website. Here I showcase my work experience, skills and projects. If you need to get in touch, feel free to reach out via my social links.",
     url: "https://gokulkannanr.in",
     siteName: "Gokul's Portfolio site",
     locale: "en-US",

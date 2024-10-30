@@ -41,7 +41,7 @@ const SKILLS = [
 
 const LANGUAGES = [
   {
-    name: "Go",
+    name: "Golang",
     icon: GoIcon,
     url: "https://go.dev/",
   },
