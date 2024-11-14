@@ -17,6 +17,15 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  redirects: async () => {
+    return [
+      {
+        source: "/resume.pdf",
+        destination: "/GokulKannan-Resume.pdf",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

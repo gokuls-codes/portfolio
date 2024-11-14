@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className=" pt-20 pb-10 flex flex-col justify-around items-center gap-20  bg-foreground/5 px-8">
       <div className=" flex flex-col md:flex-row items-center justify-around w-full  container mx-auto">
-        <div className=" space-y-2 flex flex-col items-end">
+        <div className=" space-y-2 flex flex-col items-center">
           <h3 className=" text-4xl xl:text-6xl">Have an idea?</h3>
           <p className=" text-2xl xl:text-4xl font-light text-right  text-foreground/70">
             Let&apos;s build it together!
