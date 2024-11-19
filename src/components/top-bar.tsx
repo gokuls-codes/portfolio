@@ -9,13 +9,15 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 
 const TopBar = () => {
   return (
     <header className="  h-24 sticky top-0 z-10">
       <div className=" container mx-auto flex items-center justify-between px-4 md:justify-around h-full">
         <Link href="/" className=" z-30">
-          <h3 className=" text-foreground text-2xl font-bold">{"<GK />"}</h3>
+          <Image src={"/topbar-logo.png"} width={72} height={72} alt="GK" />
+          {/* <h3 className=" text-foreground text-2xl font-bold">{"<GK />"}</h3> */}
         </Link>
         <nav className=" gap-4 z-30 items-center hidden md:flex">
           <Button variant="ghost" asChild>
