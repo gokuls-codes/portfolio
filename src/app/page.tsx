@@ -13,7 +13,7 @@ export default function Home() {
       <main className=" container bg-background mx-auto ">
         <HeroSection />
         <ExperienceSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         <SkillsSection />
       </main>
       <Footer />

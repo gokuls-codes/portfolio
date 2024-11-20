@@ -30,11 +30,11 @@ const TopBar = () => {
               Skills
             </Link>
           </Button>
-          <Button variant="ghost" asChild>
+          {/* <Button variant="ghost" asChild>
             <Link className=" text-foreground" href="#projects">
               Projects
             </Link>
-          </Button>
+          </Button> */}
           <Button variant="ghost" asChild className=" gap-2 ml-auto">
             <a
               className=" text-foreground"
@@ -79,11 +79,11 @@ const TopBar = () => {
                     Skills
                   </Link>
                 </Button>
-                <Button variant="ghost" asChild>
+                {/* <Button variant="ghost" asChild>
                   <Link className=" text-foreground" href="#projects">
                     Projects
                   </Link>
-                </Button>
+                </Button> */}
                 <Button variant="ghost" asChild className=" gap-2 mt-auto">
                   <a
                     className=" text-foreground"
