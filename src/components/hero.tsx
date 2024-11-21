@@ -5,7 +5,7 @@ import { MapPin } from "lucide-react";
 const HeroSection = () => {
   return (
     <section
-      className=" z-10 h-[calc(100vh-6rem)] bg-background/20  flex flex-col md:flex-row md:items-center md:pb-[30vh] md:justify-center pb-8 gap-6"
+      className=" z-10 h-[calc(100vh-6rem)] flex flex-col md:flex-row md:items-center md:pb-[30vh] md:justify-center pb-8 gap-6"
       id="hero"
     >
       <Image

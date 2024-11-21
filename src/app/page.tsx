@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <PointerGlow>
       <TopBar />
-      <main className=" container bg-background mx-auto ">
+      <main className=" container mx-auto ">
         <HeroSection />
         <ExperienceSection />
         {/* <ProjectsSection /> */}
