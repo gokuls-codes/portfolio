@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 
-const PointerGlow = ({ children }: { children?: React.ReactNode }) => {
+const PointerGlow = () => {
   const [pointerPosition, setPointerPosition] = useState({ x: 0, y: 0 });
   const [showPointer, setShowPointer] = useState(true);
   const timerRef = useRef<null | NodeJS.Timeout>(null);
@@ -21,28 +21,26 @@ const PointerGlow = ({ children }: { children?: React.ReactNode }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
       // if (timerRef.current !== null) clearTimeout(timerRef.current);
     };
   }, []);
 
   return (
-    <div className=" w-full relative -z-10">
+    <div className=" w-full relative -z-10 pointer-events-none">
       <div
         className={cn(
-          " size-40 hidden transition-opacity duration-300 ease-in-out md:block  xl:size-80 blur-xl -z-10 cursor-follower rounded-full fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none",
+          " size-40 hidden transition-opacity duration-300 ease-in-out md:block  xl:size-80 blur-xl -z-10 cursor-follower rounded-full fixed -translate-x-1/2 -translate-y-1/2",
           showPointer ? "opacity-100" : "opacity-0"
         )}
         style={{
           top: pointerPosition.y,
           left: pointerPosition.x,
         }}
-      ></div>
-
-      {children}
+      />
     </div>
   );
 };

@@ -8,15 +8,18 @@ import TopBar from "@/components/top-bar";
 
 export default function Home() {
   return (
-    <PointerGlow>
-      <TopBar />
-      <main className=" container mx-auto ">
-        <HeroSection />
-        <ExperienceSection />
-        {/* <ProjectsSection /> */}
-        <SkillsSection />
-      </main>
-      <Footer />
-    </PointerGlow>
+    <>
+      <PointerGlow />
+      <div className=" relative z-10">
+        <TopBar />
+        <main className=" container mx-auto ">
+          <HeroSection />
+          <ExperienceSection />
+          {/* <ProjectsSection /> */}
+          <SkillsSection />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
