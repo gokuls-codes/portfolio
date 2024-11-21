@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Montserrat } from "next/font/google";
+import { Oxanium } from "next/font/google";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+// const montserrat = Montserrat({ subsets: ["latin"] });
+const oxanium = Oxanium({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gokul Kannan",
@@ -54,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${montserrat.className} antialiased bg-background`}>
+      <body className={`${oxanium.className} antialiased bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
