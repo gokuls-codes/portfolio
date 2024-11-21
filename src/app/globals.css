@@ -162,5 +162,6 @@ html {
 }
 
 .cursor-follower {
-  background: radial-gradient(#242324, hsl(var(--background)));
+  /* @apply bg-primary/10 */
+  background: radial-gradient(#0d1831, hsl(var(--background)));
 }

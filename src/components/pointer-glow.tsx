@@ -16,8 +16,8 @@ const PointerGlow = () => {
     }
 
     timerRef.current = setTimeout(() => {
-      setShowPointer(false);
-    }, 500);
+      // setShowPointer(false);
+    }, 2000);
   };
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const PointerGlow = () => {
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
-      // if (timerRef.current !== null) clearTimeout(timerRef.current);
+      if (timerRef.current !== null) clearTimeout(timerRef.current);
     };
   }, []);
 
