@@ -11,8 +11,74 @@ const ProjectsSection = () => {
       id="experience"
     >
       <h2 className="  text-4xl font-semibold text-center">Projects</h2>
+
       <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-[90vw] md:max-w-[90vw] lg:max-w-screen-lg mx-auto p-4">
-        <div className=" mx-auto project-card w-full aspect-[4/5] bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+        <div className=" project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+          <Image
+            src={"/on-the-go-preview.png"}
+            height={300}
+            width={500}
+            alt="On the Go preview"
+            className=" w-full object-contain rounded-sm"
+          />
+          <div className=" space-y-2">
+            <h3 className=" text-2xl font-semibold ">On the Go</h3>
+            <p className=" text-sm text-foreground/70">November 2024</p>
+            <p>
+              An automated CI/CD deployment service that triggers deployments
+              when pushing code to GitHub with an easy to use admin panel.
+            </p>
+          </div>
+
+          <div className=" flex flex-wrap gap-2">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              Go
+            </span>
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              Templ
+            </span>
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              HTMX
+            </span>
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              Tailwind CSS
+            </span>
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              NGINX
+            </span>
+          </div>
+
+          <div className="flex items-center justify-between">
+            <div className=" text-green-500 text-sm items-center flex gap-1">
+              <Check size={14} />
+              <span>Actively maintaining</span>
+            </div>
+            <div className=" flex gap-2">
+              <Button asChild variant={"outline"} className=" p-1 size-12">
+                <a
+                  href={"https://github.com/gokuls-codes/expense-tracker-t3"}
+                  target="_blank"
+                  title="GitHub repository for the project"
+                  aria-label="GitHub repository for the project"
+                >
+                  <GithubIcon className=" size-16" />
+                </a>
+              </Button>
+              <Button asChild variant={"outline"} className=" p-1 size-12">
+                <a
+                  href={"https://expenses.gokulkannanr.in/"}
+                  target="_blank"
+                  title="Live URL of the project"
+                  aria-label="Live URL of the project"
+                >
+                  <Link2 size={16} />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        <div className=" project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
           <Image
             src={"/expenses-preview.png"}
             height={300}
@@ -76,9 +142,7 @@ const ProjectsSection = () => {
             </div>
           </div>
         </div>
-        <div className=" mx-auto project-card w-full aspect-[4/5] bg-background rounded-lg relative"></div>
-        <div className=" mx-auto project-card w-full aspect-[4/5] bg-background rounded-lg relative"></div>
-        <div className=" mx-auto project-card w-full aspect-[4/5] bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+        <div className=" mx-auto project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
           <Image
             src={"/sudoku-solver.png"}
             height={300}
@@ -88,7 +152,7 @@ const ProjectsSection = () => {
           />
           <div className=" space-y-2">
             <h3 className=" text-2xl font-semibold ">Sudoku solver</h3>
-            <p className=" text-sm text-foreground/70">July 2022</p>
+            <p className=" text-sm text-foreground/70">May 2022</p>
             <p>
               A sudoku game, where users can import a sudoku puzzle and the code
               solve it using backtracking.
@@ -116,6 +180,59 @@ const ProjectsSection = () => {
               <Button asChild variant={"outline"} className=" p-1 size-12">
                 <a
                   href={"https://github.com/gokuls-codes/Sudoku-Solver-Pygame"}
+                  target="_blank"
+                  title="GitHub repository for the project"
+                  aria-label="GitHub repository for the project"
+                >
+                  <GithubIcon className=" size-16" />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className=" mx-auto project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+          <Image
+            src={"/rdt-preview.png"}
+            height={300}
+            width={500}
+            alt="Reliable data transfer using UDP preview"
+            className=" w-full object-contain rounded-sm"
+          />
+          <div className=" space-y-2">
+            <h3 className=" text-2xl font-semibold ">
+              Reliable data transfer using UDP
+            </h3>
+            <p className=" text-sm text-foreground/70">July 2022</p>
+            <p>
+              A reliable data transfer protocol implemented using UDP sockets to
+              facilitate faster throughput than TCP.
+            </p>
+          </div>
+
+          <div className=" flex flex-wrap gap-2">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              Computer Networks
+            </span>
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              Python
+            </span>
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              Linux
+            </span>
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+              Virtual machines
+            </span>
+          </div>
+
+          <div className="flex items-center justify-between">
+            <div className=" text-red-500 text-sm items-center flex gap-1">
+              <X size={14} />
+              <span>Archived project</span>
+            </div>
+            <div className=" flex gap-2">
+              <Button asChild variant={"outline"} className=" p-1 size-12">
+                <a
+                  href={"https://github.com/gokuls-codes/RDT-using-UDP"}
                   target="_blank"
                   title="GitHub repository for the project"
                   aria-label="GitHub repository for the project"

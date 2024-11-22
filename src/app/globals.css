@@ -186,16 +186,9 @@ html {
     #059670,
     #0c617d
   );
-  animation: rotation 20s linear infinite;
-  z-index: -1;
-  /* animation-play-state: paused; */
+  animation: rotation 8s linear infinite;
+  z-index: -20;
 }
-
-/* .project-card:hover::before,
-.project-card:hover::after {
-  animation-play-state: running;
-} */
-
 .project-card:hover::after {
   filter: blur(1rem);
 }
