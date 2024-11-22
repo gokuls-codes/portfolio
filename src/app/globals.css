@@ -180,18 +180,24 @@ html {
   border-radius: inherit;
   background: conic-gradient(
     from var(--gradient-angle),
-    #118ab2,
-    #06d6a0,
-    #ffd166,
-    #06d6a0,
-    #118ab2
+    #0c617d,
+    #059670,
+    #b39248,
+    #059670,
+    #0c617d
   );
-  animation: rotation 5s linear infinite;
+  animation: rotation 20s linear infinite;
   z-index: -1;
+  /* animation-play-state: paused; */
 }
 
-.project-card::after {
-  filter: blur(8px);
+/* .project-card:hover::before,
+.project-card:hover::after {
+  animation-play-state: running;
+} */
+
+.project-card:hover::after {
+  filter: blur(1rem);
 }
 
 @keyframes rotation {
