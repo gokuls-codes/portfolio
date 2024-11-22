@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
-import { Check, Github, Link2 } from "lucide-react";
+import { Check, Link2 } from "lucide-react";
 import GithubIcon from "@/resources/links/github.svg";
 
 const ProjectsSection = () => {
@@ -24,7 +24,8 @@ const ProjectsSection = () => {
             <h3 className=" text-2xl font-semibold ">Expense Tracker</h3>
             <p className=" text-sm text-foreground/70">July 2024</p>
             <p>
-              A web application to track users' expenses and generate reports.
+              A web application where users can record their expenses and
+              visually see their spending habits.
             </p>
           </div>
 
