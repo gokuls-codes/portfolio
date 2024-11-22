@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { MapPin } from "lucide-react";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -8,14 +10,30 @@ const HeroSection = () => {
       className=" z-10 h-[calc(100vh-6rem)] flex flex-col md:flex-row md:items-center md:pb-[30vh] md:justify-center pb-8 gap-6"
       id="hero"
     >
-      <Image
-        src={"/image.jpg"}
-        width={600}
-        height={900}
-        alt="hero-image"
-        className=" h-2/3  object-contain w-auto"
-        priority
-      />
+      <div className=" h-2/3 relative group overflow-hidden">
+        <Image
+          src={"/image.jpg"}
+          width={600}
+          height={900}
+          alt="hero-image"
+          className=" h-full object-contain w-auto group-hover:scale-105 transition-all duration-200 ease-in-out"
+          priority
+        />
+        <div className=" absolute group-hover:backdrop-blur-[1px] bg-transparent group-hover:bg-gradient-to-bl from-transparent to-background z-10 inset-0 transition-all duration-200 ease-in-out grid place-items-center">
+          <Button
+            variant={"link"}
+            className=" text-foreground cursor-pointer text-xl"
+            asChild
+          >
+            <Link
+              href={"/about"}
+              className=" opacity-0 group-hover:opacity-100"
+            >
+              More about me
+            </Link>
+          </Button>
+        </div>
+      </div>
       <div className=" flex flex-col gap-2 px-4 md:px-0">
         <p className=" text-2xl md:text-4xl font-thin">Hi, I&apos;m</p>
         <h1 className=" text-4xl md:text-6xl font-bold">Gokul Kannan</h1>

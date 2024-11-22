@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const PointerGlow = () => {
   const [pointerPosition, setPointerPosition] = useState({ x: 0, y: 0 });
-  const [showPointer, setShowPointer] = useState(true);
+  const [showPointer, setShowPointer] = useState(false);
   const timerRef = useRef<null | NodeJS.Timeout>(null);
 
   const handleMouseMove = (e: MouseEvent) => {
@@ -16,8 +16,8 @@ const PointerGlow = () => {
     }
 
     timerRef.current = setTimeout(() => {
-      // setShowPointer(false);
-    }, 2000);
+      setShowPointer(false);
+    }, 500);
   };
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const PointerGlow = () => {
     <div className=" w-full relative -z-10 pointer-events-none">
       <div
         className={cn(
-          " size-40 hidden transition-opacity duration-300 ease-in-out md:block  xl:size-80 blur-xl -z-10 cursor-follower rounded-full fixed -translate-x-1/2 -translate-y-1/2",
+          " size-80 lg:size-[500px] hidden transition-opacity duration-300 ease-in-out md:block blur-xl -z-10 cursor-follower rounded-full fixed -translate-x-1/2 -translate-y-1/2",
           showPointer ? "opacity-100" : "opacity-0"
         )}
         style={{
