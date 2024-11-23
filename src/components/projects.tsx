@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
-import { Check, Link2, X } from "lucide-react";
+import { ArrowUpRight, Check, Link2, X } from "lucide-react";
 import GithubIcon from "@/resources/links/github.svg";
+import Link from "next/link";
 
 const ProjectsSection = () => {
   return (
@@ -79,6 +80,7 @@ const ProjectsSection = () => {
         </div>
 
         <div className=" project-card w-full bg-background rounded-lg relative p-4 grid grid-rows-subgrid row-span-5">
+          {/* <div className=" group-hover:bg-background/20 z-20   group-hover:backdrop-blur-[1px] bg-transparent inset-0 absolute" /> */}
           <Image
             src={"/expenses-preview.png"}
             height={300}
@@ -87,7 +89,17 @@ const ProjectsSection = () => {
             className=" w-full object-contain aspect-video rounded-sm "
           />
           <div className=" space-y-2">
-            <h3 className=" text-2xl font-semibold ">Expense Tracker</h3>
+            <Button
+              variant={"link"}
+              asChild
+              size={"lg"}
+              className=" text-2xl font-semibold px-0 text-foreground "
+            >
+              <Link href={"/projects/expense-tracker"} className=" relative">
+                <span>Expense Tracker</span>
+                <ArrowUpRight size={24} className=" absolute top-2 -right-6" />
+              </Link>
+            </Button>
             <p className=" text-sm text-foreground/70">July 2024</p>
           </div>
           <p>

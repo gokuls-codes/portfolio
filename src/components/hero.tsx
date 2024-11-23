@@ -16,7 +16,7 @@ const HeroSection = () => {
           width={600}
           height={900}
           alt="hero-image"
-          className=" h-full object-contain w-auto group-hover:scale-105 transition-all duration-200 ease-in-out"
+          className=" h-full object-contain w-full  md:w-auto  group-hover:scale-105 transition-all duration-200 ease-in-out"
           priority
         />
         <div className=" absolute group-hover:backdrop-blur-[1px] bg-transparent group-hover:bg-gradient-to-bl from-transparent to-background z-10 inset-0 transition-all duration-200 ease-in-out grid place-items-center">

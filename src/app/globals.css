@@ -216,6 +216,6 @@ html {
   animation-range: 10vh 20vh;
 }
 
-/* .projects-container {
-  grid-auto-rows: m auto auto auto auto;
-} */
+.projects-container {
+  grid-auto-rows: auto auto auto auto auto;
+}
