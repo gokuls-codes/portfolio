@@ -17,7 +17,7 @@ const PointerGlow = () => {
 
     timerRef.current = setTimeout(() => {
       setShowPointer(false);
-    }, 500);
+    }, 5000);
   };
 
   useEffect(() => {

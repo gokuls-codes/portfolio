@@ -90,7 +90,7 @@ const Footer = () => {
       </div>
       <div className="  container mx-auto flex items-center justify-center gap-2">
         <Copyright />
-        <span>Gokul Kannan</span>
+        <span>Developed by Gokul Kannan</span>
       </div>
     </footer>
   );

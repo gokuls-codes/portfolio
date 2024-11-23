@@ -134,7 +134,7 @@ html {
     scale: 1 1;
     animation: slide-from-side linear forwards;
     animation-timeline: view();
-    animation-range: 20vh 30vh;
+    animation-range: 10vh 20vh;
     transform-origin: left;
   }
 
@@ -142,7 +142,7 @@ html {
     scale: 1 1;
     animation: slide-from-side linear forwards;
     animation-timeline: view();
-    animation-range: 20vh 30vh;
+    animation-range: 10vh 20vh;
     transform-origin: right;
   }
 }
@@ -178,7 +178,7 @@ html {
   position: absolute;
   inset: -2px;
   border-radius: inherit;
-  background: conic-gradient(
+  background-image: conic-gradient(
     from var(--gradient-angle),
     #0c617d,
     #059670,
@@ -186,9 +186,15 @@ html {
     #059670,
     #0c617d
   );
-  animation: rotation 8s linear infinite;
+  /* animation: rotation 8s linear infinite; */
+  scale: 0.6;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 10vh 20vh;
   z-index: -20;
 }
+
 .project-card:hover::after {
   filter: blur(1rem);
 }
@@ -201,3 +207,15 @@ html {
     --gradient-angle: 360deg;
   }
 }
+
+.project-card > * {
+  scale: 0.6;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 10vh 20vh;
+}
+
+/* .projects-container {
+  grid-auto-rows: m auto auto auto auto;
+} */

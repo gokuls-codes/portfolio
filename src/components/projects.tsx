@@ -12,38 +12,38 @@ const ProjectsSection = () => {
     >
       <h2 className="  text-4xl font-semibold text-center">Projects</h2>
 
-      <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-[90vw] md:max-w-[90vw] lg:max-w-screen-lg mx-auto p-4">
-        <div className=" project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+      <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-[90vw] md:max-w-[90vw] lg:max-w-screen-lg xl:gap-8 mx-auto p-4 projects-container">
+        <div className=" project-card grid grid-rows-subgrid row-span-5  w-full bg-background rounded-lg relative p-4">
           <Image
             src={"/on-the-go-preview.png"}
             height={300}
             width={500}
             alt="On the Go preview"
-            className=" w-full object-contain rounded-sm"
+            className=" w-full object-contain aspect-video rounded-sm"
           />
           <div className=" space-y-2">
             <h3 className=" text-2xl font-semibold ">On the Go</h3>
             <p className=" text-sm text-foreground/70">November 2024</p>
-            <p>
-              An automated CI/CD deployment service that triggers deployments
-              when pushing code to GitHub with an easy to use admin panel.
-            </p>
           </div>
+          <p>
+            An automated CI/CD deployment service that triggers deployments when
+            pushing code to GitHub with an easy to use admin panel.
+          </p>
 
           <div className=" flex flex-wrap gap-2">
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Go
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Templ
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               HTMX
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Tailwind CSS
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               NGINX
             </span>
           </div>
@@ -78,37 +78,37 @@ const ProjectsSection = () => {
           </div>
         </div>
 
-        <div className=" project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+        <div className=" project-card w-full bg-background rounded-lg relative p-4 grid grid-rows-subgrid row-span-5">
           <Image
             src={"/expenses-preview.png"}
             height={300}
             width={500}
             alt="expense tracker preview"
-            className=" w-full object-contain rounded-sm"
+            className=" w-full object-contain aspect-video rounded-sm "
           />
           <div className=" space-y-2">
             <h3 className=" text-2xl font-semibold ">Expense Tracker</h3>
             <p className=" text-sm text-foreground/70">July 2024</p>
-            <p>
-              A responsive web application where users can record their expenses
-              and visually see their spending habits.
-            </p>
           </div>
+          <p>
+            A responsive web application where users can record their expenses
+            and visually see their spending habits.
+          </p>
 
           <div className=" flex flex-wrap gap-2">
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Next JS
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Postgres
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               tRRPC
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               ShadCN
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Tailwind CSS
             </span>
           </div>
@@ -142,31 +142,31 @@ const ProjectsSection = () => {
             </div>
           </div>
         </div>
-        <div className=" mx-auto project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+        <div className=" mx-auto project-card w-full bg-background rounded-lg relative p-4 grid grid-rows-subgrid row-span-5 ">
           <Image
             src={"/sudoku-solver.png"}
             height={300}
             width={500}
             alt="sudoku solver preview"
-            className=" w-full object-contain rounded-sm"
+            className=" w-full object-contain aspect-video rounded-sm "
           />
           <div className=" space-y-2">
             <h3 className=" text-2xl font-semibold ">Sudoku solver</h3>
             <p className=" text-sm text-foreground/70">May 2022</p>
-            <p>
-              A sudoku game, where users can import a sudoku puzzle and the code
-              solve it using backtracking.
-            </p>
           </div>
+          <p>
+            A sudoku game, where users can import a sudoku puzzle and the code
+            solve it using backtracking.
+          </p>
 
           <div className=" flex flex-wrap gap-2">
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Python
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Pygame
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Backtracking
             </span>
           </div>
@@ -190,36 +190,36 @@ const ProjectsSection = () => {
             </div>
           </div>
         </div>
-        <div className=" mx-auto project-card w-full bg-background rounded-lg relative p-4 flex flex-col gap-4 justify-between">
+        <div className=" mx-auto project-card w-full bg-background rounded-lg relative p-4 grid grid-rows-subgrid row-span-5">
           <Image
             src={"/rdt-preview.png"}
             height={300}
             width={500}
             alt="Reliable data transfer using UDP preview"
-            className=" w-full object-contain rounded-sm"
+            className=" w-full object-contain aspect-video rounded-sm "
           />
           <div className=" space-y-2">
             <h3 className=" text-2xl font-semibold ">
               Reliable data transfer using UDP
             </h3>
             <p className=" text-sm text-foreground/70">July 2022</p>
-            <p>
-              A reliable data transfer protocol implemented using UDP sockets to
-              facilitate faster throughput than TCP.
-            </p>
           </div>
+          <p>
+            A reliable data transfer protocol implemented using UDP sockets to
+            facilitate faster throughput than TCP.
+          </p>
 
           <div className=" flex flex-wrap gap-2">
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Computer Networks
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Python
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Linux
             </span>
-            <span className=" border text-foreground/70 p-2 rounded-sm text-xs">
+            <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Virtual machines
             </span>
           </div>
