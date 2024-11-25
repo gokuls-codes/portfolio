@@ -112,52 +112,26 @@ html {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .experience > * {
-    scale: 0.6;
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: 20vh 30vh;
-  }
-
-  @keyframes fade-in {
-    to {
-      scale: 1;
-      opacity: 1;
-    }
-  }
+.experience > * {
+  scale: 0.6;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 10vh 20vh;
 }
 
-@media only screen and (min-width: 768px) {
-  .experience-left {
-    scale: 1 1;
-    animation: slide-from-side linear forwards;
-    animation-timeline: view();
-    animation-range: 10vh 20vh;
-    transform-origin: left;
-  }
-
-  .experience-right {
-    scale: 1 1;
-    animation: slide-from-side linear forwards;
-    animation-timeline: view();
-    animation-range: 10vh 20vh;
-    transform-origin: right;
-  }
-}
-
-@keyframes slide-from-side {
+@keyframes fade-in {
   to {
-    scale: 0 1;
+    scale: 1;
+    opacity: 1;
   }
 }
 
 .exp-separator {
-  scale: 1 0;
+  scale: 0 0;
   animation: slide-in linear forwards;
   animation-timeline: view();
-  animation-range: 30vh 40vh;
+  animation-range: 20vh 30vh;
   transform-origin: top;
 }
 

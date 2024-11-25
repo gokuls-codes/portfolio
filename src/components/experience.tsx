@@ -27,13 +27,12 @@ const ExperienceSection = () => {
           <p>BlueStone Jewellery and Lifestyle</p>
           <p>Bengaluru, India</p>
           <p className=" text-lg text-foreground/70 ">June 2023 - Present</p>
-          <div className=" absolute -inset-2 z-20 bg-background experience-left hidden md:block "></div>
         </div>
         <Separator
           orientation="vertical"
           className=" h-auto hidden md:block exp-separator"
         />
-        <Separator className=" md:hidden " />
+        <Separator className=" md:hidden exp-separator  " />
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
           <ul className="list-disc pl-4 text-sm md:text-base">
@@ -51,8 +50,6 @@ const ExperienceSection = () => {
               stores by using RFID for scanning products.
             </li>
           </ul>
-
-          <div className=" absolute -inset-2 z-20 bg-black experience-right hidden md:block "></div>
         </div>
       </div>
 
@@ -70,13 +67,12 @@ const ExperienceSection = () => {
           <p>Samsung R&D Institute</p>
           <p>Noida, India</p>
           <p className=" text-lg text-foreground/70 ">June 2022 - July 2022</p>
-          <div className=" absolute -inset-2 z-20 bg-background experience-left hidden md:block "></div>
         </div>
         <Separator
           orientation="vertical"
           className=" h-auto hidden md:block exp-separator"
         />
-        <Separator className=" md:hidden " />
+        <Separator className=" md:hidden exp-separator" />
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
           <ul className="list-disc pl-4 text-sm md:text-base">
@@ -90,8 +86,6 @@ const ExperienceSection = () => {
               communication between the client and the server.
             </li>
           </ul>
-
-          <div className=" absolute -inset-2 z-20 bg-black experience-right hidden md:block "></div>
         </div>
       </div>
 
@@ -109,13 +103,12 @@ const ExperienceSection = () => {
           <p>Indian Institute of Technology</p>
           <p>Hyderabad, India</p>
           <p className=" text-lg text-foreground/70 ">July 2019 - May 2023</p>
-          <div className=" absolute -inset-2 z-20 bg-background experience-left hidden md:block "></div>
         </div>
         <Separator
           orientation="vertical"
           className=" h-auto hidden md:block exp-separator"
         />
-        <Separator className=" md:hidden " />
+        <Separator className=" md:hidden exp-separator" />
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
           <ul className="list-disc pl-4 text-sm md:text-base">
@@ -130,8 +123,6 @@ const ExperienceSection = () => {
               various techniques.
             </li>
           </ul>
-
-          <div className=" absolute -inset-2 z-20 bg-black experience-right hidden md:block "></div>
         </div>
       </div>
     </section>
