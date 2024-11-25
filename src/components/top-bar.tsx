@@ -32,9 +32,6 @@ const TopBar = () => {
           <Link className=" text-foreground nav-link relative" href="#skills">
             Skills
           </Link>
-          <Link className=" text-foreground nav-link relative" href="#skills">
-            Skills
-          </Link>
           <a
             className=" text-foreground nav-link relative flex gap-2"
             href={"/resume.pdf"}
