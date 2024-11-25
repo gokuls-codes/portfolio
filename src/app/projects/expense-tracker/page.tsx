@@ -13,7 +13,7 @@ const ExpenseTrackerPage = () => {
       <div className=" relative z-10">
         <TopBar />
         <main className=" container mx-auto px-4 py-8 space-y-8 mb-8 ">
-          <div className=" flex justify-between">
+          <div className=" flex flex-col md:flex-row gap-4 justify-between">
             <div className="   space-y-4">
               <h1 className=" text-4xl md:text-6xl font-extralight">
                 Expense Tracker
@@ -40,7 +40,7 @@ const ExpenseTrackerPage = () => {
               </div>
             </div>
 
-            <div className=" space-y-4 w-[240px] ">
+            <div className=" space-y-4 w-full md:w-[240px] ">
               <Button asChild className=" w-full" size={"lg"}>
                 <a
                   href={"https://expenses.gokulkannanr.in/"}
