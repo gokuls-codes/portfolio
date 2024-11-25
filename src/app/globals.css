@@ -214,27 +214,27 @@ html {
 .test-opp-scroll {
   animation: test-opp-scroll linear forwards;
   animation-timeline: scroll();
+  animation-range-start: 100vh;
+  animation-range-end: 200vh;
+  transform: translateY(0);
 }
 
 @keyframes test-opp-scroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-66.6666%);
+  to {
+    transform: translateY(-200vh);
   }
 }
 
 .test-opp-scroll-reverse {
   animation: test-opp-scroll-reverse linear forwards;
   animation-timeline: scroll();
+  transform: translateY(-200vh);
+  animation-range-start: 100vh;
+  animation-range-end: 200vh;
 }
 
 @keyframes test-opp-scroll-reverse {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
+  to {
     transform: translateY(0);
   }
 }
