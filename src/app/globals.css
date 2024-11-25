@@ -219,3 +219,20 @@ html {
 .projects-container {
   grid-auto-rows: auto auto auto auto auto;
 }
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  scale: 0 1;
+  transform-origin: center;
+  transition: scale 100ms ease-out;
+}
+
+.nav-link:hover::after {
+  scale: 1 1;
+}

@@ -89,17 +89,13 @@ const ProjectsSection = () => {
             className=" w-full object-contain aspect-video rounded-sm "
           />
           <div className=" space-y-2">
-            <Button
-              variant={"link"}
-              asChild
-              size={"lg"}
-              className=" text-2xl font-semibold px-0 text-foreground "
+            <Link
+              href={"/projects/expense-tracker"}
+              className=" relative nav-link flex gap-1 items-start w-fit"
             >
-              <Link href={"/projects/expense-tracker"} className=" relative">
-                <span>Expense Tracker</span>
-                <ArrowUpRight size={24} className=" absolute top-2 -right-6" />
-              </Link>
-            </Button>
+              <h3 className=" text-2xl font-semibold ">Expense Tracker</h3>
+              <ArrowUpRight size={16} className="" />
+            </Link>
             <p className=" text-sm text-foreground/70">July 2024</p>
           </div>
           <p>

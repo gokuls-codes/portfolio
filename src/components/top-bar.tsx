@@ -19,32 +19,30 @@ const TopBar = () => {
           <Image src={"/topbar-logo.png"} width={72} height={72} alt="GK" />
           {/* <h3 className=" text-foreground text-2xl font-bold">{"<GK />"}</h3> */}
         </Link>
-        <nav className=" gap-4 z-30 items-center hidden md:flex">
-          <Button variant="ghost" asChild>
-            <Link className=" text-foreground" href="#experience">
-              Experience
-            </Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link className=" text-foreground" href="#skills">
-              Skills
-            </Link>
-          </Button>
-          {/* <Button variant="ghost" asChild>
-            <Link className=" text-foreground" href="#projects">
-              Projects
-            </Link>
-          </Button> */}
-          <Button variant="ghost" asChild className=" gap-2 ml-auto">
-            <a
-              className=" text-foreground"
-              href={"/resume.pdf"}
-              target="_blank"
-            >
-              <span>Resume</span>
-              <ArrowUpRight size={12} />
-            </a>
-          </Button>
+        <nav className=" gap-8 z-30 items-center hidden md:flex">
+          <Link
+            className=" text-foreground nav-link relative"
+            href="#experience"
+          >
+            Experience
+          </Link>
+          <Link className=" text-foreground nav-link relative" href="#projects">
+            Projects
+          </Link>
+          <Link className=" text-foreground nav-link relative" href="#skills">
+            Skills
+          </Link>
+          <Link className=" text-foreground nav-link relative" href="#skills">
+            Skills
+          </Link>
+          <a
+            className=" text-foreground nav-link relative flex gap-2"
+            href={"/resume.pdf"}
+            target="_blank"
+          >
+            <span>Resume</span>
+            <ArrowUpRight size={12} />
+          </a>
         </nav>
         <div className="md:hidden z-30">
           <Sheet>
@@ -62,38 +60,40 @@ const TopBar = () => {
               side="right"
               className="w-[200px] sm:w-[300px] backdrop-blur-sm bg-background/5 "
             >
-              <SheetTitle>Menu</SheetTitle>
-              <nav className=" flex flex-col gap-4 z-30 items-center py-6 h-full">
-                <Button variant="ghost" asChild>
-                  <Link className=" text-foreground" href="/">
-                    Home
-                  </Link>
-                </Button>
-                <Button variant="ghost" asChild>
-                  <Link className=" text-foreground" href="#experience">
-                    Experience
-                  </Link>
-                </Button>
-                <Button variant="ghost" asChild>
-                  <Link className=" text-foreground" href="#skills">
-                    Skills
-                  </Link>
-                </Button>
-                {/* <Button variant="ghost" asChild>
-                  <Link className=" text-foreground" href="#projects">
-                    Projects
-                  </Link>
-                </Button> */}
-                <Button variant="ghost" asChild className=" gap-2 mt-auto">
-                  <a
-                    className=" text-foreground"
-                    href={"/resume.pdf"}
-                    target="_blank"
-                  >
-                    <span>Resume</span>
-                    <ArrowUpRight size={12} />
-                  </a>
-                </Button>
+              <SheetTitle>Navigation</SheetTitle>
+              <nav className=" flex flex-col gap-8 z-30 items-start py-8 h-full">
+                <Link
+                  className=" text-foreground nav-link relative"
+                  href="#experience"
+                >
+                  Experience
+                </Link>
+                <Link
+                  className=" text-foreground nav-link relative"
+                  href="#projects"
+                >
+                  Projects
+                </Link>
+                <Link
+                  className=" text-foreground nav-link relative"
+                  href="#skills"
+                >
+                  Skills
+                </Link>
+                <Link
+                  className=" text-foreground nav-link relative"
+                  href="#skills"
+                >
+                  Skills
+                </Link>
+                <a
+                  className=" text-foreground nav-link relative flex gap-2 mt-auto"
+                  href={"/resume.pdf"}
+                  target="_blank"
+                >
+                  <span>Resume</span>
+                  <ArrowUpRight size={12} />
+                </a>
               </nav>
             </SheetContent>
           </Sheet>
