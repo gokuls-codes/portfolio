@@ -8,8 +8,8 @@ import Link from "next/link";
 const ProjectsSection = () => {
   return (
     <section
-      className=" p-6 space-y-8 pt-24 -mt-16 min-h-screen "
-      id="experience"
+      className=" p-6 space-y-8 pt-24 -mt-16 pb-8 min-h-screen "
+      id="projects"
     >
       <h2 className="  text-4xl font-semibold text-center">Projects</h2>
 
@@ -114,7 +114,7 @@ const ProjectsSection = () => {
               tRRPC
             </span>
             <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
-              ShadCN
+              Shadcn UI
             </span>
             <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
               Tailwind CSS

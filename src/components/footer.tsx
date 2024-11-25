@@ -6,9 +6,9 @@ import InstagramIcon from "@/resources/links/instagram.svg";
 import LeetCodeIcon from "@/resources/links/leetcode.svg";
 import DiscordIcon from "@/resources/links/discord.svg";
 import { Button } from "./ui/button";
-import { Copyright, Mail } from "lucide-react";
 import Link from "next/link";
 import CopyMailButton from "./copy-mail-button";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
           <h3 className=" text-center mb-6 text-xl">Links</h3>
           <ul className=" flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:flex-col gap-2">
             <li>
-              <Button asChild variant={"link"}>
+              <Button asChild variant={"link"} className="text-foreground/70">
                 <Link target="_blank" href={"https://github.com/gokuls-codes"}>
                   <GithubIcon />
                   <span>GitHub</span>
@@ -37,7 +37,7 @@ const Footer = () => {
               </Button>
             </li>
             <li>
-              <Button asChild variant={"link"}>
+              <Button asChild variant={"link"} className="text-foreground/70">
                 <Link target="_blank" href={"mailto:gokulkannanr9@gmail.com"}>
                   <Mail size={16} className=" text-white" />
                   <span>Mail</span>
@@ -45,7 +45,7 @@ const Footer = () => {
               </Button>
             </li>
             <li>
-              <Button asChild variant={"link"}>
+              <Button asChild variant={"link"} className="text-foreground/70">
                 <Link
                   target="_blank"
                   href={"https://www.linkedin.com/in/gokulkannanr/"}
@@ -56,7 +56,7 @@ const Footer = () => {
               </Button>
             </li>
             <li>
-              <Button asChild variant={"link"}>
+              <Button asChild variant={"link"} className="text-foreground/70">
                 <Link target="_blank" href={"https://discord.gg/hmP8cyMJ"}>
                   <DiscordIcon className=" size-10" />
                   <span>Discord</span>
@@ -64,7 +64,7 @@ const Footer = () => {
               </Button>
             </li>
             <li>
-              <Button asChild variant={"link"}>
+              <Button asChild variant={"link"} className="text-foreground/70">
                 <Link
                   target="_blank"
                   href={"https://leetcode.com/u/gokulkannanr9/"}
@@ -75,7 +75,7 @@ const Footer = () => {
               </Button>
             </li>
             <li>
-              <Button asChild variant={"link"}>
+              <Button asChild variant={"link"} className="text-foreground/70">
                 <Link
                   target="_blank"
                   href={"https://www.instagram.com/me_is_gokul"}
@@ -89,8 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="  container mx-auto flex items-center justify-center gap-2">
-        <Copyright />
-        <span>Developed by Gokul Kannan</span>
+        <span>Designed, Developed and Deployed by Gokul</span>
       </div>
     </footer>
   );

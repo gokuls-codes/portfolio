@@ -39,7 +39,7 @@ const HeroSection = () => {
         <h1 className=" text-4xl md:text-6xl font-bold">Gokul Kannan</h1>
         <h2 className=" text-2xl  md:text-4xl ">Software Engineer</h2>
         <p className=" text-lg  md:text-2xl  text-foreground/70  ">
-          Transforming ideas into products
+          Building Stuff, One Line at a Time.
         </p>
         <div className="   md:text-lg font-light flex gap-2 items-center text-foreground/70">
           <MapPin size={16} />
