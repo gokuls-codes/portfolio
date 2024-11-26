@@ -52,12 +52,12 @@ const ProjectsSection = () => {
           <div className="flex items-center justify-between">
             <div className=" text-green-500 text-sm items-center flex gap-1">
               <Check size={14} />
-              <span>Actively maintaining</span>
+              <span>Actively developing</span>
             </div>
             <div className=" flex gap-2">
               <Button asChild variant={"outline"} className=" p-1 size-12">
                 <a
-                  href={"https://github.com/gokuls-codes/expense-tracker-t3"}
+                  href={"https://github.com/gokuls-codes/On-the-go"}
                   target="_blank"
                   title="GitHub repository for the project"
                   aria-label="GitHub repository for the project"
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
                   <GithubIcon className=" size-16" />
                 </a>
               </Button>
-              <Button asChild variant={"outline"} className=" p-1 size-12">
+              {/* <Button asChild variant={"outline"} className=" p-1 size-12">
                 <a
                   href={"https://expenses.gokulkannanr.in/"}
                   target="_blank"
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
                 >
                   <Link2 size={16} />
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

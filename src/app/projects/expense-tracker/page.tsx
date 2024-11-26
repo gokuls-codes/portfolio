@@ -23,7 +23,7 @@ const ExpenseTrackerPage = () => {
                   Next JS
                 </span>
                 <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
-                  Postgres
+                  PostgreSQL
                 </span>
                 <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
                   tRRPC
@@ -36,6 +36,12 @@ const ExpenseTrackerPage = () => {
                 </span>
                 <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
                   Tailwind CSS
+                </span>
+                <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
+                  Auth JS
+                </span>
+                <span className=" border text-foreground/70 p-2 rounded-sm text-xs h-fit">
+                  Recharts
                 </span>
               </div>
             </div>
@@ -76,15 +82,16 @@ const ExpenseTrackerPage = () => {
             width={1920}
             height={1080}
             alt="Expense Tracker"
+            className=" w-full h-auto project-image"
           />
-          <p className=" text-lg md:text-2xl text-foreground/70">
+          <p className=" text-lg md:text-2xl text-foreground/70 project-section">
             A responsive web application to help users manage their finances by
             recording their expenses and visualize their spending habits. It
             simplifies budgeting and provides insights to make smarter financial
             decisions.
           </p>
 
-          <div className=" space-y-2">
+          <div className=" space-y-2 project-section">
             <h2 className=" text-2xl md:text-4xl font-semibold">Features</h2>
             <ul className=" text-lg md:text-2xl list-disc pl-5  text-foreground/70 font-light ">
               <li>
@@ -118,7 +125,7 @@ const ExpenseTrackerPage = () => {
             </ul>
           </div>
 
-          <div className=" space-y-2">
+          <div className=" space-y-2  project-section">
             <h2 className=" text-2xl md:text-4xl font-semibold">Tech Stack</h2>
             <ul className=" text-lg md:text-2xl list-disc pl-5  text-foreground/70 font-light ">
               <li>
@@ -140,7 +147,7 @@ const ExpenseTrackerPage = () => {
             </ul>
           </div>
 
-          <div className=" space-y-2">
+          <div className=" space-y-2  project-section">
             <h2 className=" text-2xl md:text-4xl font-semibold">Learnings</h2>
             <ul className=" text-lg md:text-2xl list-disc pl-5  text-foreground/70 font-light ">
               <li>
@@ -161,10 +168,23 @@ const ExpenseTrackerPage = () => {
                 themes.
               </li>
               <li>
-                Mastered the use of React Charts to build interactive and
-                insightful spending analytics for users.
+                Mastered the use of ReCharts to build interactive and insightful
+                spending analytics for users.
               </li>
             </ul>
+          </div>
+
+          <div className=" space-y-2  project-section">
+            <Image
+              src={"/expense-tracker-2.png"}
+              width={1920}
+              height={1080}
+              alt="Expense Tracker"
+              className=" w-full h-auto project-image"
+            />
+            <p className="text-lg md:text-2xl   text-foreground/70 font-light text-center">
+              Customizable bar chart page
+            </p>
           </div>
           {/* <div className=" h-screen w-full"></div> */}
         </main>

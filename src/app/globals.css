@@ -238,3 +238,31 @@ html {
     transform: translateY(0);
   }
 }
+
+@supports (animation-timeline: view()) {
+  .project-image {
+    scale: 1;
+    opacity: 1;
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-duration: 1ms;
+    animation-range: 80vh 130vh;
+    transform-origin: bottom;
+  }
+
+  @keyframes fade-out {
+    to {
+      /* opacity: 0; */
+      scale: 0.5;
+      /* transform: translateY(30%);
+       */
+    }
+  }
+}
+
+.project-section {
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 10vh 30vh;
+}
