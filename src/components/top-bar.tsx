@@ -21,19 +21,25 @@ const TopBar = () => {
         </Link>
         <nav className=" gap-8 z-30 items-center hidden md:flex">
           <Link
-            className=" text-foreground nav-link relative"
+            className=" text-foreground nav-link relative md:text-lg"
             href="#experience"
           >
             Experience
           </Link>
-          <Link className=" text-foreground nav-link relative" href="#projects">
+          <Link
+            className=" text-foreground nav-link relative md:text-lg"
+            href="#projects"
+          >
             Projects
           </Link>
-          <Link className=" text-foreground nav-link relative" href="#skills">
+          <Link
+            className=" text-foreground nav-link relative md:text-lg"
+            href="#skills"
+          >
             Skills
           </Link>
           <a
-            className=" text-foreground nav-link relative flex gap-2"
+            className=" text-foreground nav-link relative md:text-lg flex gap-2"
             href={"/resume.pdf"}
             target="_blank"
           >
@@ -70,12 +76,6 @@ const TopBar = () => {
                   href="#projects"
                 >
                   Projects
-                </Link>
-                <Link
-                  className=" text-foreground nav-link relative"
-                  href="#skills"
-                >
-                  Skills
                 </Link>
                 <Link
                   className=" text-foreground nav-link relative"
