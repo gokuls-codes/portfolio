@@ -36,7 +36,7 @@ const SKILLS = [
   "Algorithms",
   "System Design",
   "Machine Learning",
-  "UI/UX Design",
+  "UI Design",
 ];
 
 const LANGUAGES = [

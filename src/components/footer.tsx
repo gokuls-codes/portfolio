@@ -25,71 +25,166 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" mt-12 md:mt-0">
-          <h3 className=" text-center mb-6 text-xl">Links</h3>
-          <ul className=" flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:flex-col gap-2">
-            <li>
-              <Button asChild variant={"link"} className="text-foreground/70">
-                <Link target="_blank" href={"https://github.com/gokuls-codes"}>
-                  <GithubIcon />
-                  <span>GitHub</span>
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button asChild variant={"link"} className="text-foreground/70">
-                <Link target="_blank" href={"mailto:gokulkannanr9@gmail.com"}>
-                  <Mail size={16} className=" text-white" />
-                  <span>Mail</span>
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button asChild variant={"link"} className="text-foreground/70">
-                <Link
-                  target="_blank"
-                  href={"https://www.linkedin.com/in/gokulkannanr/"}
+        <div className=" mt-12 md:mt-0 flex md:gap-20 flex-col gap-12 md:flex-row">
+          <div className=" mt-12 md:mt-0">
+            <h3 className="  mb-6 text-xl text-center md:text-start">
+              Projects
+            </h3>
+            <ul className=" flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:flex-col gap-x-6 gap-y-2 md:gap-2">
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
                 >
-                  <LinkedInIcon className=" size-10" />
-                  <span>LinkedIn</span>
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button asChild variant={"link"} className="text-foreground/70">
-                <Link target="_blank" href={"https://discord.gg/hmP8cyMJ"}>
-                  <DiscordIcon className=" size-10" />
-                  <span>Discord</span>
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button asChild variant={"link"} className="text-foreground/70">
-                <Link
-                  target="_blank"
-                  href={"https://leetcode.com/u/gokulkannanr9/"}
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/gokuls-codes"}
+                  >
+                    <span className=" text-base">On the GO</span>
+                  </Link>
+                </Button>
+              </li>
+
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
                 >
-                  <LeetCodeIcon className=" size-10" />
-                  <span>LeetCode</span>
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button asChild variant={"link"} className="text-foreground/70">
-                <Link
-                  target="_blank"
-                  href={"https://www.instagram.com/me_is_gokul"}
+                  <Link
+                    target="_blank"
+                    href={"https://expenses.gokulkannanr.in"}
+                  >
+                    <span className=" text-base">Expense Tracker</span>
+                  </Link>
+                </Button>
+              </li>
+
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
                 >
-                  <InstagramIcon className=" size-10" />
-                  <span>Instagram</span>
-                </Link>
-              </Button>
-            </li>
-          </ul>
+                  <Link
+                    target="_blank"
+                    href={"https://expenses.gokulkannanr.in"}
+                  >
+                    <span className=" text-base">Point of sales</span>
+                  </Link>
+                </Button>
+              </li>
+
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
+                >
+                  <Link
+                    target="_blank"
+                    href={"https://expenses.gokulkannanr.in"}
+                  >
+                    <span className=" text-base">RDT using UDP</span>
+                  </Link>
+                </Button>
+              </li>
+            </ul>
+          </div>
+          <div className=" ">
+            <h3 className="  mb-6 text-xl text-center md:text-start">Links</h3>
+            <ul className=" flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:flex-col gap-4 md:gap-2 ">
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
+                >
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/gokuls-codes"}
+                  >
+                    <GithubIcon />
+                    <span className=" text-base">GitHub</span>
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
+                >
+                  <Link target="_blank" href={"mailto:gokulkannanr9@gmail.com"}>
+                    <Mail size={16} className=" text-white" />
+                    <span className=" text-base">Mail</span>
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
+                >
+                  <Link
+                    target="_blank"
+                    href={"https://www.linkedin.com/in/gokulkannanr/"}
+                  >
+                    <LinkedInIcon className=" size-10" />
+                    <span className=" text-base">LinkedIn</span>
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
+                >
+                  <Link target="_blank" href={"https://discord.gg/hmP8cyMJ"}>
+                    <DiscordIcon className=" size-10" />
+                    <span className=" text-base">Discord</span>
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
+                >
+                  <Link
+                    target="_blank"
+                    href={"https://leetcode.com/u/gokulkannanr9/"}
+                  >
+                    <LeetCodeIcon className=" size-10" />
+                    <span className=" text-base">LeetCode</span>
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button
+                  asChild
+                  variant={"link"}
+                  className="text-foreground/70 px-0"
+                >
+                  <Link
+                    target="_blank"
+                    href={"https://www.instagram.com/me_is_gokul"}
+                  >
+                    <InstagramIcon className=" size-10" />
+                    <span className=" text-base">Instagram</span>
+                  </Link>
+                </Button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="  container mx-auto flex items-center justify-center gap-2">
-        <span>Designed, Developed and Deployed by Gokul</span>
+        <span className=" text-lg">Designed and Developed by Gokul</span>
       </div>
     </footer>
   );

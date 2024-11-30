@@ -102,7 +102,7 @@ html {
   opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
-  animation-range: 20vh 30vh;
+  animation-range: 10vh 20vh;
 }
 
 @keyframes fade-in {

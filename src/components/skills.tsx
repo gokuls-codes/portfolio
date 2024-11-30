@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SkillsSection = () => {
   return (
-    <section className=" p-6 space-y-8 py-24 -mt-16  " id="skills">
+    <section className=" p-6 space-y-8 py-24 -mt-16 mb-32  " id="skills">
       <h2 className="  text-4xl font-semibold text-center">Skills</h2>
       <div className=" grid grid-cols-2 mx-auto w-fit gap-4 skills">
         {SKILLS.map((skill, id) => (
