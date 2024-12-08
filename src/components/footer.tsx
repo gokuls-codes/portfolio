@@ -39,7 +39,7 @@ const Footer = () => {
                 >
                   <Link
                     target="_blank"
-                    href={"https://github.com/gokuls-codes"}
+                    href={"https://github.com/gokuls-codes/On-the-go"}
                   >
                     <span className=" text-base">On the GO</span>
                   </Link>
@@ -69,7 +69,9 @@ const Footer = () => {
                 >
                   <Link
                     target="_blank"
-                    href={"https://expenses.gokulkannanr.in"}
+                    href={
+                      "https://github.com/gokuls-codes/Sudoku-Solver-Pygame"
+                    }
                   >
                     <span className=" text-base">Point of sales</span>
                   </Link>
@@ -84,7 +86,7 @@ const Footer = () => {
                 >
                   <Link
                     target="_blank"
-                    href={"https://expenses.gokulkannanr.in"}
+                    href={"https://github.com/gokuls-codes/RDT-using-UDP"}
                   >
                     <span className=" text-base">RDT using UDP</span>
                   </Link>
