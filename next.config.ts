@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
   redirects: async () => {
     return [
       {
-        source: "/resume.pdf",
+        source: "/resume",
         destination: "/GokulKannan-Resume.pdf",
         permanent: true,
       },
