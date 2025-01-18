@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
         destination: "/GokulKannan-Resume.pdf",
         permanent: true,
       },
+      {
+        source: "/resume.pdf",
+        destination: "/GokulKannan-Resume.pdf",
+        permanent: true,
+      },
     ];
   },
 };
