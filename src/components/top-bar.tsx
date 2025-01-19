@@ -46,7 +46,7 @@ const TopBar = () => {
           </Link>
           <a
             className=" text-foreground nav-link relative md:text-lg flex gap-2"
-            href={"/resume"}
+            href={"/GokulKannan-Resume.pdf"}
             target="_blank"
           >
             <span>Resume</span>
@@ -97,7 +97,7 @@ const TopBar = () => {
                 </Link>
                 <a
                   className=" text-foreground nav-link relative flex gap-2 mt-auto"
-                  href={"/resume"}
+                  href={"/GokulKannan-Resume.pdf"}
                   target="_blank"
                 >
                   <span>Resume</span>

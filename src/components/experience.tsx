@@ -37,13 +37,14 @@ const ExperienceSection = () => {
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
           <ul className="list-disc pl-4 text-sm md:text-base">
             <li>
-              Rewriting the billing software used in stores in React which will
-              improve the user experience significantly, thereby increase the
-              sales.
+              Rewrote the Point of Sales application used in stores to React
+              which will improved the user experience significantly, thereby
+              increase the sales.
             </li>
             <li>
-              Contributed to a microservice to get similar jewellery designs
-              based on image uploaded
+              Deployed the Point of Sales application to AWS. Identified and
+              optimized the deployment process which reduced the deployment
+              costs by 90% and load times by 90%.
             </li>
             <li>
               Worked on a project that aims to improve customer experience in
@@ -115,12 +116,17 @@ const ExperienceSection = () => {
             <li>
               Completed courses on Data Structures and Algorithms, Operating
               Systems, Computer Networks, Database Management Systems, Software
-              Engieering, Machine Learing, Reinforcement Learning.
+              Engieering, Machine Learing, Reinforcement Learning, Quantum
+              Computing.
             </li>
             <li>
               Worked on a project to reduce the bias in the predictions of
               machine learning models due to the bias in the training data using
               various techniques.
+            </li>
+            <li>
+              Extracuricullarly I was part of the Robotics Club, Photography
+              Club and worked as a placement coordinator.
             </li>
           </ul>
         </div>
