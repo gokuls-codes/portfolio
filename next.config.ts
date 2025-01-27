@@ -32,6 +32,19 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  headers: async () => {
+    return [
+      {
+        source: "/GokulKannan-Resume.pdf",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/pdf",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
