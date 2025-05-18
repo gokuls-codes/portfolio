@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { MapPin } from "lucide-react";
-import { Button } from "./ui/button";
-import Link from "next/link";
+// import { Button } from "./ui/button";
+// import Link from "next/link";
 
 const HeroSection = () => {
   return (
