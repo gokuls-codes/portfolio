@@ -26,7 +26,7 @@ const ExperienceSection = () => {
           <h3 className=" text-2xl font-semibold">Software Engineer</h3>
           <p>BlueStone Jewellery and Lifestyle</p>
           <p>Bengaluru, India</p>
-          <p className=" text-lg text-foreground/70 ">June 2023 - Present</p>
+          <p className=" text-lg text-foreground/70 ">June 2023 - May 2025</p>
         </div>
         <Separator
           orientation="vertical"
@@ -38,13 +38,13 @@ const ExperienceSection = () => {
           <ul className="list-disc pl-4 text-sm md:text-base">
             <li>
               Rewrote the Point of Sales application used in stores to React
-              which will improved the user experience significantly, thereby
-              increase the sales.
+              which improved the user experience significantly, thereby
+              increasing the sales.
             </li>
             <li>
               Deployed the Point of Sales application to AWS. Identified and
               optimized the deployment process which reduced the deployment
-              costs by 90% and load times by 90%.
+              costs by 50% and load times by 80%.
             </li>
             <li>
               Worked on a project that aims to improve customer experience in

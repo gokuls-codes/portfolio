@@ -11,17 +11,17 @@ const HeroSection = () => {
       id="hero"
     >
       <div className=" h-2/3 relative group overflow-hidden">
-        <Link href={"/about"}>
-          <Image
-            src={"/image.jpg"}
-            width={600}
-            height={900}
-            alt="gokul's photo"
-            className=" h-full object-contain w-full  md:w-auto  group-hover:scale-105 transition-all duration-200 ease-in-out"
-            priority
-          />
-        </Link>
-        <div className=" hidden  absolute group-hover:backdrop-blur-[1px] bg-transparent group-hover:bg-gradient-to-bl from-transparent to-background z-10 inset-0 transition-all duration-200 ease-in-out xl:grid place-items-center">
+        {/* <Link href={"/about"}> */}
+        <Image
+          src={"/image.jpg"}
+          width={600}
+          height={900}
+          alt="gokul's photo"
+          className=" h-full object-contain w-full  md:w-auto  group-hover:scale-105 transition-all duration-200 ease-in-out"
+          priority
+        />
+        {/* </Link> */}
+        {/* <div className=" hidden  absolute group-hover:backdrop-blur-[1px] bg-transparent group-hover:bg-gradient-to-bl from-transparent to-background z-10 inset-0 transition-all duration-200 ease-in-out xl:grid place-items-center">
           <Button
             variant={"link"}
             className=" text-foreground cursor-pointer text-xl"
@@ -34,7 +34,7 @@ const HeroSection = () => {
               More about me
             </Link>
           </Button>
-        </div>
+        </div> */}
       </div>
       <div className=" flex flex-col gap-2 px-4 md:px-0">
         <p className=" text-2xl md:text-4xl font-thin">Hi, I&apos;m</p>
