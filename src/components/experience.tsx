@@ -2,6 +2,7 @@ import React from "react";
 
 import BlueStoneLogo from "@/resources/bluestone-white.png";
 import SmasungResearchLogo from "@/resources/samsung-white.png";
+import OracleLogo from "@/resources/oracle.png";
 import IITHLogo from "@/resources/IITH.png";
 
 import Image from "next/image";
@@ -13,8 +14,40 @@ const ExperienceSection = () => {
       <h2 className="  text-4xl font-semibold text-center">
         Experience & Education
       </h2>
+
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
-        <div className=" text-center md:w-[250px]  md:text-right space-y-2 relative experience ">
+        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience ">
+          <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
+            <Image
+              src={OracleLogo}
+              width={200}
+              height={100}
+              alt="Bluestone logo"
+            />
+          </div>
+          <h3 className=" text-2xl font-semibold">Member of Technical Staff</h3>
+          <p>Oracle</p>
+          <p>Bengaluru, India</p>
+          <p className=" text-lg text-foreground/70 ">May 2025 - Present</p>
+        </div>
+        <Separator
+          orientation="vertical"
+          className=" h-auto hidden md:block exp-separator"
+        />
+        <Separator className=" md:hidden exp-separator  " />
+
+        <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
+          <ul className="list-disc pl-4 text-sm md:text-base">
+            <li>
+              Recenlty joined the Oracle Cloud Infrastructure (OCI) Console team
+              as a UXE. More details coming soon.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className=" flex flex-col md:flex-row gap-4 justify-center ">
+        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience ">
           <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
             <Image
               src={BlueStoneLogo}
@@ -37,25 +70,24 @@ const ExperienceSection = () => {
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
           <ul className="list-disc pl-4 text-sm md:text-base">
             <li>
-              Rewrote the Point of Sales application used in stores to React
-              which improved the user experience significantly, thereby
-              increasing the sales.
+              Developed the frontend for the Point of Sales (POS) application
+              used in stores in React which has improved the user experience
+              significantly, thereby increase the sales.
             </li>
             <li>
-              Deployed the Point of Sales application to AWS. Identified and
-              optimized the deployment process which reduced the deployment
-              costs by 50% and load times by 80%.
+              Contributed to a microservice to get similar jewellery designs
+              based on image uploaded
             </li>
             <li>
-              Worked on a project that aims to improve customer experience in
-              stores by using RFID for scanning products.
+              Developed a React Native tablet application to make the browsing
+              of the products at store easier.
             </li>
           </ul>
         </div>
       </div>
 
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
-        <div className=" text-center  md:w-[250px]  md:text-right space-y-2 relative experience ">
+        <div className=" text-center  md:w-[300px]  md:text-right space-y-2 relative experience ">
           <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
             <Image
               src={SmasungResearchLogo}
@@ -91,7 +123,7 @@ const ExperienceSection = () => {
       </div>
 
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
-        <div className=" text-center md:w-[250px]  md:text-right space-y-2 relative experience ">
+        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience ">
           <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
             <Image
               src={IITHLogo}
