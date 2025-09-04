@@ -80,7 +80,8 @@ const ExperienceSection = () => {
             </li>
             <li>
               Developed a React Native tablet application which works with a
-              Raspberry Pi to make the browsing of the products at store easier.
+              Raspberry Pi to make the scanning/browsing of the products at
+              store easier.
             </li>
           </ul>
         </div>
