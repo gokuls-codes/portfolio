@@ -79,8 +79,8 @@ const ExperienceSection = () => {
               based on image uploaded
             </li>
             <li>
-              Developed a React Native tablet application to make the browsing
-              of the products at store easier.
+              Developed a React Native tablet application which works with a
+              Raspberry Pi to make the browsing of the products at store easier.
             </li>
           </ul>
         </div>
