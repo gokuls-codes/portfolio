@@ -40,7 +40,7 @@ const ExperienceSection = () => {
           <ul className="list-disc pl-4 text-sm md:text-base">
             <li>
               Recenlty joined the Oracle Cloud Infrastructure (OCI) Console team
-              as a UXE. More details coming soon.
+              as a User Experience Engineer. More details coming soon.
             </li>
           </ul>
         </div>
