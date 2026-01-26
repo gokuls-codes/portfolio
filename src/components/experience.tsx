@@ -39,8 +39,19 @@ const ExperienceSection = () => {
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
           <ul className="list-disc pl-4 text-sm md:text-base">
             <li>
-              Recenlty joined the Oracle Cloud Infrastructure (OCI) Console team
-              as a User Experience Engineer. More details coming soon.
+              Architected and maintained a library of reusable Preact/React
+              templates for the internal OCI frontend framework, standardizing
+              design patterns for 100+ global cloud services.
+            </li>
+            <li>
+              Collaborated on internal framework enhancements to reduce
+              technical debt and improve the developer experience (DX) for
+              internal teams migrating to standardized OCI patterns.
+            </li>
+            <li>
+              Developed and deployed multiple pages for FastConnect service in
+              OCI, implementing complex frontend workflows using Oracle’s
+              internal high-performance framework.
             </li>
           </ul>
         </div>
