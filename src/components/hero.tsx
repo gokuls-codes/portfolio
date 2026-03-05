@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className=" h-2/3 relative group overflow-hidden">
         {/* <Link href={"/about"}> */}
         <Image
-          src={"/image.jpg"}
+          src={"/avatar.png"}
           width={600}
           height={900}
           alt="gokul's photo"
