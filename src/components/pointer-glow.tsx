@@ -2,46 +2,52 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
+import { motion, useSpring, useMotionValue } from "framer-motion";
 
 const PointerGlow = () => {
-  const [pointerPosition, setPointerPosition] = useState({ x: 0, y: 0 });
-  const [showPointer, setShowPointer] = useState(false);
-  const timerRef = useRef<null | NodeJS.Timeout>(null);
+  const mouseX = useMotionValue(-100);
+  const mouseY = useMotionValue(-100);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleMouseMove = (e: MouseEvent) => {
-    setPointerPosition({ x: e.clientX, y: e.clientY });
-    setShowPointer(true);
-    if (timerRef.current !== null) {
-      clearTimeout(timerRef.current);
-    }
-
-    timerRef.current = setTimeout(() => {
-      setShowPointer(false);
-    }, 5000);
-  };
+  // Smooth spring configuration
+  const springConfig = { damping: 25, stiffness: 150 };
+  const smoothX = useSpring(mouseX, springConfig);
+  const smoothY = useSpring(mouseY, springConfig);
 
   useEffect(() => {
-    document.addEventListener("mousemove", handleMouseMove);
+    const handleMouseMove = (e: MouseEvent) => {
+      mouseX.set(e.clientX);
+      mouseY.set(e.clientY);
+      if (!isVisible) setIsVisible(true);
+    };
+
+    const handleMouseLeave = () => setIsVisible(false);
+
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      if (timerRef.current !== null) clearTimeout(timerRef.current);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, []);
+  }, [mouseX, mouseY, isVisible]);
 
   return (
-    <div className=" w-full relative -z-10 pointer-events-none">
-      <div
-        className={cn(
-          " size-80 lg:size-[500px] hidden transition-opacity duration-300 ease-in-out md:block blur-xl -z-10 cursor-follower rounded-full fixed -translate-x-1/2 -translate-y-1/2",
-          showPointer ? "opacity-100" : "opacity-0"
-        )}
+    <motion.div
+      className="fixed inset-0 pointer-events-none -z-10"
+      animate={{ opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      <motion.div
+        className="size-[400px] lg:size-[600px] rounded-full blur-[100px] bg-primary/10 opacity-60"
         style={{
-          top: pointerPosition.y,
-          left: pointerPosition.x,
+          x: smoothX,
+          y: smoothY,
+          translateX: "-50%",
+          translateY: "-50%",
         }}
       />
-    </div>
+    </motion.div>
   );
 };
 

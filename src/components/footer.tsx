@@ -1,195 +1,82 @@
-import React from "react";
+"use client";
 
-import GithubIcon from "@/resources/links/github.svg";
-import LinkedInIcon from "@/resources/links/linkedin.svg";
-import InstagramIcon from "@/resources/links/instagram.svg";
-import LeetCodeIcon from "@/resources/links/leetcode.svg";
-import DiscordIcon from "@/resources/links/discord.svg";
-import { Button } from "./ui/button";
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowUpRight, Mail } from "lucide-react";
 import Link from "next/link";
-import CopyMailButton from "./copy-mail-button";
-import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer
-      className=" pt-20 pb-10 flex flex-col justify-around items-center gap-20  px-8 z-20 bg-[#0E0D0E]"
-      id="contact"
-    >
-      <div className=" flex flex-col md:flex-row items-center justify-around w-full  container mx-auto">
-        <div className=" space-y-2 flex flex-col items-center">
-          <h3 className=" text-4xl xl:text-6xl">Have an idea?</h3>
-          <p className=" text-2xl xl:text-4xl font-light text-right  text-foreground/70">
-            Let&apos;s build it together!
-          </p>
-          <div className=" flex flex-col items-center gap-1">
-            <p className=" text-right">Drop a mail to</p>
-            <CopyMailButton />
-          </div>
-        </div>
+    <footer className="py-32 px-6 max-w-7xl mx-auto space-y-32" id="contact">
+      <div className="space-y-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-6xl md:text-[10rem] font-black tracking-[calc(-0.05em)] leading-none text-white/5"
+        >
+          CONTACT
+        </motion.div>
 
-        <div className=" mt-12 md:mt-0 flex md:gap-20 flex-col gap-12 md:flex-row">
-          <div className=" mt-12 md:mt-0">
-            <h3 className="  mb-6 text-xl text-center md:text-start">
-              Projects
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="space-y-8">
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
+              Let&apos;s build <br /> something{" "}
+              <span className="text-white/20 italic">remarkable.</span>
             </h3>
-            <ul className=" flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:flex-col gap-x-6 gap-y-2 md:gap-2">
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://github.com/gokuls-codes/On-the-go"}
-                  >
-                    <span className=" text-base">On the GO</span>
-                  </Link>
-                </Button>
-              </li>
-
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://expenses.gokulkannanr.in"}
-                  >
-                    <span className=" text-base">Expense Tracker</span>
-                  </Link>
-                </Button>
-              </li>
-
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={
-                      "https://github.com/gokuls-codes/Sudoku-Solver-Pygame"
-                    }
-                  >
-                    <span className=" text-base">Point of sales</span>
-                  </Link>
-                </Button>
-              </li>
-
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://github.com/gokuls-codes/RDT-using-UDP"}
-                  >
-                    <span className=" text-base">RDT using UDP</span>
-                  </Link>
-                </Button>
-              </li>
-            </ul>
+            <div className="flex flex-col gap-4">
+              <a
+                href="mailto:gokulkannanr9@gmail.com"
+                className="text-2xl md:text-3xl font-light text-white/40 hover:text-white transition-colors duration-500 underline underline-offset-8 decoration-white/10"
+              >
+                gokulkannanr9@gmail.com
+              </a>
+            </div>
           </div>
-          <div className=" ">
-            <h3 className="  mb-6 text-xl text-center md:text-start">Links</h3>
-            <ul className=" flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:flex-col gap-4 md:gap-2 ">
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
+
+          <div className="flex flex-col md:items-end gap-12">
+            <div className="grid grid-cols-2 gap-x-16 gap-y-4">
+              {[
+                { name: "GitHub", href: "https://github.com/gokulkannanr" },
+                {
+                  name: "LinkedIn",
+                  href: "https://linkedin.com/in/gokulkannanr",
+                },
+                { name: "Twitter", href: "https://twitter.com/meIsGokul" },
+                {
+                  name: "Instagram",
+                  href: "https://instagram.com/gokul_kannan_r",
+                },
+              ].map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  className="text-xs font-bold uppercase tracking-[0.4em] text-white/20 hover:text-white transition-colors flex items-center gap-2 group"
                 >
-                  <Link
-                    target="_blank"
-                    href={"https://github.com/gokuls-codes"}
-                  >
-                    <GithubIcon />
-                    <span className=" text-base">GitHub</span>
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link target="_blank" href={"mailto:gokulkannanr9@gmail.com"}>
-                    <Mail size={16} className=" text-white" />
-                    <span className=" text-base">Mail</span>
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://www.linkedin.com/in/gokulkannanr/"}
-                  >
-                    <LinkedInIcon className=" size-10" />
-                    <span className=" text-base">LinkedIn</span>
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link target="_blank" href={"https://discord.gg/hmP8cyMJ"}>
-                    <DiscordIcon className=" size-10" />
-                    <span className=" text-base">Discord</span>
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://leetcode.com/u/gokulkannanr9/"}
-                  >
-                    <LeetCodeIcon className=" size-10" />
-                    <span className=" text-base">LeetCode</span>
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://www.instagram.com/me_is_gokul"}
-                  >
-                    <InstagramIcon className=" size-10" />
-                    <span className=" text-base">Instagram</span>
-                  </Link>
-                </Button>
-              </li>
-            </ul>
+                  {link.name}
+                  <ArrowUpRight
+                    size={12}
+                    className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                  />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      <div className="  container mx-auto flex items-center justify-center gap-2">
-        <span className=" text-lg">Designed and Developed by Gokul</span>
+
+      <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-bold uppercase tracking-[0.3em] text-white/10">
+        <div className="flex items-center gap-4">
+          <span>&copy; {new Date().getFullYear()} GOKUL KANNAN</span>
+          <span className="hidden md:block opacity-20">/</span>
+          <span className="hidden md:block uppercase">BENGALURU, INDIA</span>
+        </div>
+        <div className="flex items-center gap-4">
+          <Link href="#hero" className="hover:text-white transition-colors">
+            BACK TO TOP
+          </Link>
+        </div>
       </div>
     </footer>
   );

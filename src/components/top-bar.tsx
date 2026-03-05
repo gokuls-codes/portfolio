@@ -1,115 +1,94 @@
-import { ArrowUpRight, Menu } from "lucide-react";
-import Link from "next/link";
-import React from "react";
-import { Button } from "./ui/button";
+"use client";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import Image from "next/image";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const NAV_LINKS = [
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Contact", href: "#contact" },
+];
 
 const TopBar = () => {
-  return (
-    <header className="  h-24 sticky top-0 z-10">
-      <div className=" container mx-auto flex items-center justify-between px-4 md:justify-between h-full">
-        <Link href="/" className=" z-30">
-          <Image src={"/topbar-logo.png"} width={72} height={72} alt="GK" />
-          {/* <h3 className=" text-foreground text-2xl font-bold">{"<GK />"}</h3> */}
-        </Link>
-        <nav className=" gap-8 z-30 items-center hidden md:flex">
-          <Link
-            className=" text-foreground nav-link relative md:text-lg"
-            href="#experience"
-          >
-            Experience
-          </Link>
-          <Link
-            className=" text-foreground nav-link relative md:text-lg"
-            href="#projects"
-          >
-            Projects
-          </Link>
-          <Link
-            className=" text-foreground nav-link relative md:text-lg"
-            href="#skills"
-          >
-            Skills
-          </Link>
-          <Link
-            className=" text-foreground nav-link relative md:text-lg"
-            href="#contact"
-          >
-            Contact
-          </Link>
-          <a
-            className=" text-foreground nav-link relative md:text-lg flex gap-2"
-            href={"/GokulKannan-Resume.pdf"}
-            target="_blank"
-          >
-            <span>Resume</span>
-            <ArrowUpRight size={12} />
-          </a>
-        </nav>
-        <div className="md:hidden z-30">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-foreground z-30"
-              >
-                <Menu className="h-8 w-8" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent
-              side="right"
-              className="w-[200px] sm:w-[300px] backdrop-blur-sm bg-background/5 "
-            >
-              <SheetTitle>Navigation</SheetTitle>
-              <nav className=" flex flex-col gap-8 z-30 items-start py-8 h-full">
-                <Link
-                  className=" text-foreground nav-link relative"
-                  href="#experience"
-                >
-                  Experience
-                </Link>
-                <Link
-                  className=" text-foreground nav-link relative"
-                  href="#projects"
-                >
-                  Projects
-                </Link>
-                <Link
-                  className=" text-foreground nav-link relative"
-                  href="#skills"
-                >
-                  Skills
-                </Link>
-                <Link
-                  className=" text-foreground nav-link relative"
-                  href="#contact"
-                >
-                  Contact
-                </Link>
-                <a
-                  className=" text-foreground nav-link relative flex gap-2 mt-auto"
-                  href={"/GokulKannan-Resume.pdf"}
-                  target="_blank"
-                >
-                  <span>Resume</span>
-                  <ArrowUpRight size={12} />
-                </a>
-              </nav>
-            </SheetContent>
-          </Sheet>
-        </div>
-      </div>
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-      <div className=" h-full w-full absolute z-20 top-0 opacity-100 backdrop bg-background/20 backdrop-blur-2xl pointer-events-none"></div>
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center py-8 px-6">
+      <motion.nav
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        className={cn(
+          "flex items-center justify-between gap-12 px-8 py-3 rounded-full transition-all duration-500",
+          isScrolled ? "minimal-glass shadow-2xl" : "bg-transparent",
+        )}
+      >
+        {/* Logo */}
+        <Link
+          href="/"
+          className="text-lg font-black tracking-tighter text-white mr-4"
+        >
+          GOKUL<span className="opacity-20">.</span>
+        </Link>
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-2">
+          {NAV_LINKS.map((link) => (
+            <Link key={link.name} href={link.href} className="nav-link">
+              {link.name}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Toggle */}
+        <button
+          className="md:hidden text-white/50 hover:text-white transition-colors"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+      </motion.nav>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            className="fixed inset-4 top-24 bottom-auto bg-black/40 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] z-40 flex flex-col items-center justify-center gap-8 md:hidden shadow-3xl p-12"
+          >
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-3xl font-bold tracking-tighter text-white/40 hover:text-white transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="absolute top-8 right-10 text-white/30"
+            >
+              <X size={24} />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
