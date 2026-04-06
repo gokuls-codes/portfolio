@@ -53,6 +53,11 @@ const ExperienceSection = () => {
               OCI, implementing complex frontend workflows using Oracle’s
               internal high-performance framework.
             </li>
+            <li>
+              Added Right-to-Left (RTL) support for a component library used in
+              OCI-Console.
+            </li>
+            <li>Won the spot award for my various contributions.</li>
           </ul>
         </div>
       </div>
