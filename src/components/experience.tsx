@@ -10,13 +10,13 @@ import { Separator } from "./ui/separator";
 
 const ExperienceSection = () => {
   return (
-    <section className=" p-6 space-y-8 pt-24 -mt-16 " id="experience">
+    <section className=" p-6 space-y-12 pt-24 -mt-16 " id="experience">
       <h2 className="  text-4xl font-semibold text-center">
         Experience & Education
       </h2>
 
-      <div className=" flex flex-col md:flex-row gap-4 justify-center ">
-        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience ">
+      <div className=" flex flex-col md:flex-row gap-4 justify-center  ">
+        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience md:my-auto ">
           <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
             <Image
               src={OracleLogo}
@@ -38,6 +38,12 @@ const ExperienceSection = () => {
 
         <div className=" max-w-md mx-auto lg:mx-0 lg:max-w-lg md:my-auto relative experience">
           <ul className="list-disc pl-4 text-sm md:text-base">
+            <li>
+              Engineered a Human-In-The-Loop approval framework within OCI
+              Console’s microfrontend architecture, establishing guardrails that
+              prevented unauthorized AI agent execution across critical cloud
+              operations.
+            </li>
             <li>
               Architected and maintained a library of reusable Preact/React
               templates for the internal OCI frontend framework, standardizing
@@ -63,7 +69,7 @@ const ExperienceSection = () => {
       </div>
 
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
-        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience ">
+        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience md:my-auto ">
           <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
             <Image
               src={BlueStoneLogo}
@@ -104,7 +110,7 @@ const ExperienceSection = () => {
       </div>
 
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
-        <div className=" text-center  md:w-[300px]  md:text-right space-y-2 relative experience ">
+        <div className=" text-center  md:w-[300px]  md:text-right space-y-2 relative experience md:my-auto ">
           <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
             <Image
               src={SmasungResearchLogo}
@@ -140,7 +146,7 @@ const ExperienceSection = () => {
       </div>
 
       <div className=" flex flex-col md:flex-row gap-4 justify-center ">
-        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience ">
+        <div className=" text-center md:w-[300px]  md:text-right space-y-2 relative experience md:my-auto ">
           <div className=" p-2 rounded-sm w-fit mx-auto md:mr-0">
             <Image
               src={IITHLogo}
