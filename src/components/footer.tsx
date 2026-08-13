@@ -148,39 +148,12 @@ const Footer = () => {
                   variant={"link"}
                   className="text-foreground/70 px-0"
                 >
-                  <Link target="_blank" href={"https://discord.gg/hmP8cyMJ"}>
-                    <DiscordIcon className=" size-10" />
-                    <span className=" text-base">Discord</span>
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
                   <Link
                     target="_blank"
                     href={"https://leetcode.com/u/gokulkannanr9/"}
                   >
                     <LeetCodeIcon className=" size-10" />
                     <span className=" text-base">LeetCode</span>
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button
-                  asChild
-                  variant={"link"}
-                  className="text-foreground/70 px-0"
-                >
-                  <Link
-                    target="_blank"
-                    href={"https://www.instagram.com/me_is_gokul"}
-                  >
-                    <InstagramIcon className=" size-10" />
-                    <span className=" text-base">Instagram</span>
                   </Link>
                 </Button>
               </li>
